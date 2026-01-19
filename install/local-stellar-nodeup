@@ -67,7 +67,7 @@ release_url() {
 install_release() {
   local platform="$1"
   local url
-  url="$(release_url "$platform")"
+  url="$(fetch_latest_release_url "$platform")"
 
   log "installing platform=$platform"
   log "download: $url"
@@ -77,28 +77,17 @@ install_release() {
 
   local tmp
   tmp="$(mktemp -d)"
-  # 注意：这里不要用 EXIT 覆盖外层的 trap，所以用 RETURN
-  trap 'rm -rf "$tmp"' RETURN
 
-  # ✅ 下载（失败直接退出）
-  curl -fL "$url" -o "$tmp/pkg.tar.gz"
-
-  # ✅ 判断是不是 gzip（避免 tar 解 HTML）
-  if ! file "$tmp/pkg.tar.gz" | grep -qi 'gzip'; then
-    log "downloaded file is not a gzip archive:"
-    file "$tmp/pkg.tar.gz" || true
-    log "first 5 lines of downloaded content:"
-    head -n 5 "$tmp/pkg.tar.gz" || true
-    die "bad release asset (likely 404 or wrong repo/tag/asset name)"
-  fi
-
-  # 解压
+  # 下载并解压
+  curl -L "$url" -o "$tmp/pkg.tar.gz"
   tar -xzf "$tmp/pkg.tar.gz" -C "$INSTALL_DIR"
 
-  # 建软链
-  mkdir -p "$BIN_DIR"
-  chmod +x "$INSTALL_DIR/bin/$BIN_NAME" || true
+  # 清理临时目录（关键）
+  rm -rf "$tmp"
+
+  # 创建软链到 ~/.local/bin
   ln -sf "$INSTALL_DIR/bin/$BIN_NAME" "$BIN_DIR/$BIN_NAME"
+  chmod +x "$INSTALL_DIR/bin/$BIN_NAME"
 
   log "installed: $BIN_DIR/$BIN_NAME -> $INSTALL_DIR/bin/$BIN_NAME"
 }
