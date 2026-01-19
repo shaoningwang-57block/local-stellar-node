@@ -3,6 +3,7 @@ set -euo pipefail
 
 REPO="${REPO:-shaoningwang-57block/local-stellar-node}"
 REF="${REF:-main}"   # 也可以写成 v0.1.0
+
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 

@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO="${REPO:-57blocks/local-stellar-node}"   # 你的 github repo
+# ✅ 一定要是你的 repo
+REPO="${REPO:-shaoningwang-57block/local-stellar-node}"
+
+# 可选：指定版本，比如 v0.1.0；不指定则装 latest
+VERSION="${VERSION:-latest}"
+
 INSTALL_DIR="${INSTALL_DIR:-$HOME/.local-stellar-node}"
 BIN_DIR="${BIN_DIR:-$HOME/.local/bin}"
 BIN_NAME="stellar-tool"
@@ -37,7 +42,6 @@ detect_platform() {
 ensure_path() {
   mkdir -p "$BIN_DIR"
 
-  # 如果 ~/.local/bin 不在 PATH，提示用户加
   if ! echo ":$PATH:" | grep -q ":$BIN_DIR:"; then
     log "NOTE: $BIN_DIR is not in your PATH."
     log "Add this line to your shell profile (e.g. ~/.zshrc or ~/.bashrc):"
@@ -45,17 +49,25 @@ ensure_path() {
   fi
 }
 
-fetch_latest_release_url() {
+release_url() {
   local platform="$1"
-  # 你 release 的产物我们命名为：local-stellar-node_<platform>.tar.gz
+
+  # 产物名：local-stellar-node_<os>_<arch>.tar.gz
   # 例：local-stellar-node_darwin_aarch64.tar.gz
-  echo "https://github.com/$REPO/releases/latest/download/local-stellar-node_${platform}.tar.gz"
+  local asset="local-stellar-node_${platform}.tar.gz"
+
+  if [[ "$VERSION" == "latest" ]]; then
+    echo "https://github.com/${REPO}/releases/latest/download/${asset}"
+  else
+    # 指定 tag，比如 VERSION=v0.1.0
+    echo "https://github.com/${REPO}/releases/download/${VERSION}/${asset}"
+  fi
 }
 
 install_release() {
   local platform="$1"
   local url
-  url="$(fetch_latest_release_url "$platform")"
+  url="$(release_url "$platform")"
 
   log "installing platform=$platform"
   log "download: $url"
@@ -65,15 +77,28 @@ install_release() {
 
   local tmp
   tmp="$(mktemp -d)"
-  trap 'rm -rf "$tmp"' EXIT
+  # 注意：这里不要用 EXIT 覆盖外层的 trap，所以用 RETURN
+  trap 'rm -rf "$tmp"' RETURN
 
-  # 下载并解压
-  curl -L "$url" -o "$tmp/pkg.tar.gz"
+  # ✅ 下载（失败直接退出）
+  curl -fL "$url" -o "$tmp/pkg.tar.gz"
+
+  # ✅ 判断是不是 gzip（避免 tar 解 HTML）
+  if ! file "$tmp/pkg.tar.gz" | grep -qi 'gzip'; then
+    log "downloaded file is not a gzip archive:"
+    file "$tmp/pkg.tar.gz" || true
+    log "first 5 lines of downloaded content:"
+    head -n 5 "$tmp/pkg.tar.gz" || true
+    die "bad release asset (likely 404 or wrong repo/tag/asset name)"
+  fi
+
+  # 解压
   tar -xzf "$tmp/pkg.tar.gz" -C "$INSTALL_DIR"
 
-  # 创建软链到 ~/.local/bin
+  # 建软链
+  mkdir -p "$BIN_DIR"
+  chmod +x "$INSTALL_DIR/bin/$BIN_NAME" || true
   ln -sf "$INSTALL_DIR/bin/$BIN_NAME" "$BIN_DIR/$BIN_NAME"
-  chmod +x "$INSTALL_DIR/bin/$BIN_NAME"
 
   log "installed: $BIN_DIR/$BIN_NAME -> $INSTALL_DIR/bin/$BIN_NAME"
 }
@@ -81,9 +106,11 @@ install_release() {
 main() {
   need_cmd curl
   need_cmd tar
+  need_cmd file
 
   local platform
   platform="$(detect_platform)"
+
   ensure_path
   install_release "$platform"
 
