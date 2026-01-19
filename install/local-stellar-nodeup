@@ -1,0 +1,95 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+REPO="${REPO:-57blocks/local-stellar-node}"   # 你的 github repo
+INSTALL_DIR="${INSTALL_DIR:-$HOME/.local-stellar-node}"
+BIN_DIR="${BIN_DIR:-$HOME/.local/bin}"
+BIN_NAME="stellar-tool"
+
+# --- helpers ---
+log() { echo "[local-stellar-nodeup] $*"; }
+die() { echo "[local-stellar-nodeup] ERROR: $*" >&2; exit 1; }
+
+need_cmd() {
+  command -v "$1" >/dev/null 2>&1 || die "missing required command: $1"
+}
+
+detect_platform() {
+  local os arch
+  os="$(uname -s)"
+  arch="$(uname -m)"
+
+  case "$os" in
+    Darwin) os="darwin" ;;
+    Linux)  os="linux" ;;
+    *) die "unsupported OS: $os" ;;
+  esac
+
+  case "$arch" in
+    x86_64|amd64) arch="x86_64" ;;
+    arm64|aarch64) arch="aarch64" ;;
+    *) die "unsupported arch: $arch" ;;
+  esac
+
+  echo "${os}_${arch}"
+}
+
+ensure_path() {
+  mkdir -p "$BIN_DIR"
+
+  # 如果 ~/.local/bin 不在 PATH，提示用户加
+  if ! echo ":$PATH:" | grep -q ":$BIN_DIR:"; then
+    log "NOTE: $BIN_DIR is not in your PATH."
+    log "Add this line to your shell profile (e.g. ~/.zshrc or ~/.bashrc):"
+    echo "    export PATH=\"$BIN_DIR:\$PATH\""
+  fi
+}
+
+fetch_latest_release_url() {
+  local platform="$1"
+  # 你 release 的产物我们命名为：local-stellar-node_<platform>.tar.gz
+  # 例：local-stellar-node_darwin_aarch64.tar.gz
+  echo "https://github.com/$REPO/releases/latest/download/local-stellar-node_${platform}.tar.gz"
+}
+
+install_release() {
+  local platform="$1"
+  local url
+  url="$(fetch_latest_release_url "$platform")"
+
+  log "installing platform=$platform"
+  log "download: $url"
+
+  rm -rf "$INSTALL_DIR"
+  mkdir -p "$INSTALL_DIR"
+
+  local tmp
+  tmp="$(mktemp -d)"
+  trap 'rm -rf "$tmp"' EXIT
+
+  # 下载并解压
+  curl -L "$url" -o "$tmp/pkg.tar.gz"
+  tar -xzf "$tmp/pkg.tar.gz" -C "$INSTALL_DIR"
+
+  # 创建软链到 ~/.local/bin
+  ln -sf "$INSTALL_DIR/bin/$BIN_NAME" "$BIN_DIR/$BIN_NAME"
+  chmod +x "$INSTALL_DIR/bin/$BIN_NAME"
+
+  log "installed: $BIN_DIR/$BIN_NAME -> $INSTALL_DIR/bin/$BIN_NAME"
+}
+
+main() {
+  need_cmd curl
+  need_cmd tar
+
+  local platform
+  platform="$(detect_platform)"
+  ensure_path
+  install_release "$platform"
+
+  log "done ✅"
+  log "try:"
+  echo "    $BIN_NAME start"
+}
+
+main "$@"

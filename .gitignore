@@ -1,0 +1,19 @@
+# runtime
+db/
+log/
+tmp/
+*.log
+*.db
+*.sqlite
+*.pid
+
+# mac
+.DS_Store
+
+# editor
+.vscode/
+.idea/
+
+# node/rust
+target/
+node_modules/

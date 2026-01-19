@@ -1,0 +1,257 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# =========================
+# local-stellar-node CLI
+# =========================
+#
+# Repo layout expected:
+#   local-stellar-node/
+#     bin/stellar-tool
+#     script/start-service.sh
+#     script/stop-service.sh
+#     script/reset-node.sh
+#     log/stellar-core.log (optional)
+#     log/stellar-rpc.log  (optional)
+#
+# Usage:
+#   stellar-tool start
+#   stellar-tool stop
+#   stellar-tool reset
+#   stellar-tool status
+#   stellar-tool health
+#   stellar-tool wait
+#   stellar-tool logs rpc
+#
+# Env:
+#   LOCAL_STELLAR_NODE_HOME   # toolkit root path override
+#   STELLAR_RPC_URL           # default http://127.0.0.1:9003
+
+PROG="stellar-tool"
+
+# -------- helpers --------
+die() { echo "[$PROG] ERROR: $*" >&2; exit 1; }
+log() { echo "[$PROG] $*"; }
+
+# portable realpath (mac + linux)
+realpath_portable() {
+  local p="$1"
+
+  if command -v realpath >/dev/null 2>&1; then
+    realpath "$p"
+    return 0
+  fi
+
+  if command -v python3 >/dev/null 2>&1; then
+    python3 - "$p" <<'PY'
+import os,sys
+print(os.path.realpath(sys.argv[1]))
+PY
+    return 0
+  fi
+
+  # fallback: best effort
+  local dir base
+  dir="$(cd "$(dirname "$p")" && pwd)"
+  base="$(basename "$p")"
+  echo "$dir/$base"
+}
+
+# detect ROOT (repo root)
+detect_root() {
+  if [[ -n "${LOCAL_STELLAR_NODE_HOME:-}" ]]; then
+    echo "$(realpath_portable "$LOCAL_STELLAR_NODE_HOME")"
+    return 0
+  fi
+
+  # assume this script lives in <root>/bin/stellar-tool
+  local self
+  self="$(realpath_portable "$0")"
+  local bin_dir
+  bin_dir="$(dirname "$self")"
+  local root_dir
+  root_dir="$(realpath_portable "$bin_dir/..")"
+  echo "$root_dir"
+}
+
+ROOT="$(detect_root)"
+
+SCRIPT_START="$ROOT/script/start-service.sh"
+SCRIPT_STOP="$ROOT/script/stop-service.sh"
+SCRIPT_RESET="$ROOT/script/reset-node.sh"
+
+DEFAULT_RPC_URL="${STELLAR_RPC_URL:-http://127.0.0.1:9003}"
+RPC_URL="$DEFAULT_RPC_URL"
+
+ensure_layout() {
+  [[ -f "$SCRIPT_START" ]] || die "missing: $SCRIPT_START"
+  [[ -f "$SCRIPT_STOP"  ]] || die "missing: $SCRIPT_STOP"
+  [[ -f "$SCRIPT_RESET" ]] || die "missing: $SCRIPT_RESET"
+}
+
+jsonrpc_get_health() {
+  local url="$1"
+  curl -sS --fail \
+    -H "Content-Type: application/json" \
+    --data '{"jsonrpc":"2.0","id":1,"method":"getHealth"}' \
+    "$url"
+}
+
+status_cmd() {
+  ensure_layout
+  log "ROOT=$ROOT"
+  log "RPC_URL=$RPC_URL"
+  log "---- getHealth ----"
+  if jsonrpc_get_health "$RPC_URL" 2>/dev/null; then
+    echo
+  else
+    log "RPC not reachable yet."
+    return 1
+  fi
+}
+
+health_cmd() {
+  ensure_layout
+  jsonrpc_get_health "$RPC_URL"
+  echo
+}
+
+wait_cmd() {
+  ensure_layout
+  local timeout="${1:-60}"     # seconds
+  local interval="${2:-1}"     # seconds
+
+  log "Waiting for RPC healthy... (timeout=${timeout}s, interval=${interval}s)"
+  local start_ts
+  start_ts="$(date +%s)"
+
+  while true; do
+    if out="$(jsonrpc_get_health "$RPC_URL" 2>/dev/null)"; then
+      # "healthy" usually returns {"status":"healthy"} or status ok without error
+      # Your case: it may return error when DB empty / latency too high.
+      if echo "$out" | grep -q '"status"[[:space:]]*:[[:space:]]*"healthy"'; then
+        log "RPC is healthy ✅"
+        echo "$out"
+        return 0
+      fi
+
+      # Some deployments return status=ok without "healthy"
+      if echo "$out" | grep -q '"result"'; then
+        log "RPC returned result (considered ready) ✅"
+        echo "$out"
+        return 0
+      fi
+
+      # Not ready yet
+      # log "Not ready: $out"
+    fi
+
+    local now_ts
+    now_ts="$(date +%s)"
+    local elapsed=$((now_ts - start_ts))
+    if (( elapsed >= timeout )); then
+      log "Timeout waiting for RPC healthy ❌"
+      # last response for debugging
+      jsonrpc_get_health "$RPC_URL" || true
+      return 2
+    fi
+
+    sleep "$interval"
+  done
+}
+
+logs_cmd() {
+  ensure_layout
+
+  local which="${1:-}"
+  local lines="${2:-200}"
+
+  local log_rpc="$ROOT/log/stellar-rpc.log"
+  local log_core="$ROOT/log/stellar-core.log"
+  local log_caddy="$ROOT/log/caddy.log"
+
+  case "$which" in
+    rpc)
+      [[ -f "$log_rpc" ]] || die "missing log: $log_rpc"
+      log "tail -n $lines $log_rpc"
+      tail -n "$lines" "$log_rpc"
+      ;;
+    core)
+      [[ -f "$log_core" ]] || die "missing log: $log_core"
+      log "tail -n $lines $log_core"
+      tail -n "$lines" "$log_core"
+      ;;
+    caddy)
+      [[ -f "$log_caddy" ]] || die "missing log: $log_caddy"
+      log "tail -n $lines $log_caddy"
+      tail -n "$lines" "$log_caddy"
+      ;;
+    *)
+      die "usage: $PROG logs {rpc|core|caddy} [lines]"
+      ;;
+  esac
+}
+
+start_cmd() {
+  ensure_layout
+  log "Starting services..."
+  bash "$SCRIPT_START"
+}
+
+stop_cmd() {
+  ensure_layout
+  log "Stopping services..."
+  bash "$SCRIPT_STOP"
+}
+
+reset_cmd() {
+  ensure_layout
+  log "Resetting node..."
+  bash "$SCRIPT_RESET"
+}
+
+help_cmd() {
+  cat <<EOF
+$PROG - local-stellar-node CLI
+
+Usage:
+  $PROG start
+  $PROG stop
+  $PROG reset
+  $PROG status
+  $PROG health
+  $PROG wait [timeout_seconds=60] [interval_seconds=1]
+  $PROG logs {rpc|core|caddy} [lines=200]
+
+Env:
+  LOCAL_STELLAR_NODE_HOME   toolkit root override
+  STELLAR_RPC_URL           default RPC url (default: $DEFAULT_RPC_URL)
+
+Examples:
+  $PROG start
+  $PROG wait 90
+  $PROG status
+  $PROG logs rpc 300
+  STELLAR_RPC_URL=http://127.0.0.1:9003 $PROG health
+EOF
+}
+
+# -------- arg parsing --------
+cmd="${1:-help}"
+shift || true
+
+case "$cmd" in
+  start)  start_cmd "$@" ;;
+  stop)   stop_cmd "$@" ;;
+  reset) reset_cmd "$@" ;;
+  status) status_cmd "$@" ;;
+  health) health_cmd "$@" ;;
+  wait)   wait_cmd "$@" ;;
+  logs)   logs_cmd "$@" ;;
+  help|-h|--help) help_cmd ;;
+  *)
+    log "Unknown command: $cmd"
+    help_cmd
+    exit 1
+    ;;
+esac

@@ -1,0 +1,1214 @@
+time="2026-01-15T14:03:37.172+08:00" level=info msg="starting Stellar RPC" commit=5b89c30accf16112013fae9e23d1ca32a4b9464d pid=78868 version=24.0.0
+time="2026-01-15T14:03:37.251+08:00" level=info msg="stellar-core version: v25.0.1-dirty" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.256+08:00" level=info msg="starting HTTP server" addr="127.0.0.1:9003" pid=78868
+time="2026-01-15T14:03:37.277+08:00" level=info msg="stellar-core version: v25.0.1-dirty" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.296+08:00" level=info msg="Error running offline-info: error executing offline-info cmd: exit status 1, removing existing storage-dir contents" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.310+08:00" level=info msg="Warning: running non-release version v25.0.1-dirty of stellar-core" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.310+08:00" level=info msg="default: Config from /Users/57block/stellar-toolkit/db/captive-core/captive-core/stellar-core.conf" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.311+08:00" level=info msg="default: 'ARTIFICIALLY_ACCELERATE_TIME_FOR_TESTING' enabled in configuration file - node will not function properly with most networks" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.311+08:00" level=info msg="default: Generated QUORUM_SET: {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.311+08:00" level=info msg="\"t\" : 1," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.311+08:00" level=info msg="\"v\" : [ \"local_core\" ]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.311+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.313+08:00" level=info msg="Database: Connecting to: sqlite3:////Users/57block/stellar-toolkit/db/captive-core/stellar-rpc.db" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.314+08:00" level=info msg="SCP: LocalNode::LocalNode@GA5P4 qSet: ab24c3" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="default: *" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="default: * The database has been initialized" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="default: *" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="Database: Applying DB schema upgrade to version 22" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="Database: Applying DB schema upgrade to version 23" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="Database: Applying DB schema upgrade to version 24" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="Database: Applying DB schema upgrade to version 25" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="Database: DB schema is in current version" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="default: Dropping offers" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="default: Successfully rebuilt ledger tables" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="Ledger: Established genesis ledger, closing" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="Ledger: Root account: GBZXN7PIRZGNMHGA7MUUUF4GWPY5AYPV6LY4UV2GL6VJGIQRXFDNMADI" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.317+08:00" level=info msg="Ledger: Root account seed: SC5O7VZUXDJ6JBDSZ74DSERXL7W3Y5LTOAMRF7RQRL3TAGAPS7LUVG3L" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="Bucket: BucketListDB enabled: pageSizeExponent: 12 indexCutOff: 20MB, persist indexes: true" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Connection effective settings:" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: TARGET_PEER_CONNECTIONS: 8" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: MAX_ADDITIONAL_PEER_CONNECTIONS: 64" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: MAX_PENDING_CONNECTIONS: 500" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: MAX_OUTBOUND_PENDING_CONNECTIONS: 56" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: MAX_INBOUND_PENDING_CONNECTIONS: 444" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: BACKGROUND_OVERLAY_PROCESSING=true" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: EXPERIMENTAL_PARALLEL_LEDGER_APPLY=false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: *" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: * The next launch will catchup from the network afresh." pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: *" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Application destructing" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining overlay thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joining eviction thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.318+08:00" level=info msg="default: Joined all 12 threads" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.319+08:00" level=info msg="default: Application destroyed" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.335+08:00" level=info msg="Warning: running non-release version v25.0.1-dirty of stellar-core" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.336+08:00" level=info msg="default: Config from /Users/57block/stellar-toolkit/db/captive-core/captive-core/stellar-core.conf" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.336+08:00" level=info msg="default: 'ARTIFICIALLY_ACCELERATE_TIME_FOR_TESTING' enabled in configuration file - node will not function properly with most networks" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.336+08:00" level=info msg="default: Generated QUORUM_SET: {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.336+08:00" level=info msg="\"t\" : 1," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.336+08:00" level=info msg="\"v\" : [ \"local_core\" ]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.336+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.337+08:00" level=info msg="Database: Connecting to: sqlite3:////Users/57block/stellar-toolkit/db/captive-core/stellar-rpc.db" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.338+08:00" level=info msg="SCP: LocalNode::LocalNode@GD3BX qSet: ab24c3" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.338+08:00" level=info msg="Database: DB schema is in current version" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.338+08:00" level=info msg="default: Listening on 127.0.0.1:11826 for HTTP requests" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="default: Listening on 127.0.0.1:11628 for Query requests" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="Bucket: BucketListDB enabled: pageSizeExponent: 12 indexCutOff: 20MB, persist indexes: true" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="default: Connection effective settings:" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="default: TARGET_PEER_CONNECTIONS: 8" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="default: MAX_ADDITIONAL_PEER_CONNECTIONS: 64" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="default: MAX_PENDING_CONNECTIONS: 500" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="default: MAX_OUTBOUND_PENDING_CONNECTIONS: 56" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="default: MAX_INBOUND_PENDING_CONNECTIONS: 444" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="default: BACKGROUND_OVERLAY_PROCESSING=true" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="default: EXPERIMENTAL_PARALLEL_LEDGER_APPLY=false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=warning msg="History: Unsafe command: use --trusted-checkpoint-hashes or --trusted-hash to ensure catchup integrity. If you want to run untrusted catchup, use --force-untrusted-catchup." pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="Ledger: Starting up application" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="Ledger: Last closed ledger (LCL) hash is 76df1b9ff762a7a8af1f3c88549fe742e488e80fde561e34b1b6115bdac8d397" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="Ledger: Loaded LCL header from database: [seq=1, hash=76df1b]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="Ledger: Assumed bucket-state for LCL: [seq=1, hash=76df1b]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="default: Launching 1 loading and 5 compiling background threads" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.339+08:00" level=info msg="default: Compiled 0 contracts (0 bytes of Wasm) in 0ms real time, 0ms CPU time" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.340+08:00" level=info msg="Ledger: Changing state LM_BOOTING_STATE -> LM_CATCHING_UP_STATE" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.340+08:00" level=info msg="History: Downloading history archive state: .well-known/stellar-history.json" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.340+08:00" level=info msg="History: Starting catchup with configuration:" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.340+08:00" level=info msg="lastClosedLedger: 1" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.340+08:00" level=info msg="toLedger: 2" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.340+08:00" level=info msg="count: 0" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.340+08:00" level=info msg="History: Catching up to ledger 2: Downloading state file history/00/00/00/history-00000007.json for ledger 7" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.340+08:00" level=info msg="History: Downloading history archive state: history/00/00/00/history-00000007.json" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.340+08:00" level=info msg="History: Selected archive local_core to download history-00000007.json" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.351+08:00" level=info msg="History: Archive information: [name: local_core, server: v25.0.1-dirty, currentLedger: 7]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.351+08:00" level=info msg="History: Catching up to ledger 2: downloading ledger files 1/1 (100%)" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.351+08:00" level=info msg="History: Selected archive local_core to download ledger-00000007.xdr.gz" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.360+08:00" level=info msg="History: Catching up to ledger 2: Succeeded: batch-download-ledger-00000007-0000000f : 1/1 children completed" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.360+08:00" level=info msg="History: Verifying ledgers [2,3)" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.360+08:00" level=info msg="History: Skipping verification for ledger [seq=2, hash=dc485c] against SCP hash" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.360+08:00" level=info msg="History: History chain [2,2] verified" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.360+08:00" level=info msg="History: Catching up to ledger 2: Succeeded: verify-ledger-chain" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.360+08:00" level=info msg="History: Catching up to ledger 2: Ready to run: herder-state-consistency-work" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.360+08:00" level=info msg="History: Herder state is set! tracking=2, closeTime=1768457004" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.360+08:00" level=info msg="History: Catching up to ledger 2: Succeeded: herder-state-consistency-work" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.360+08:00" level=info msg="History: Downloading, unzipping and applying transactions for checkpoint 7" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.360+08:00" level=info msg="History: Catching up to ledger 2: Download & apply checkpoints: num checkpoints left to apply:1 (0% done)" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.360+08:00" level=info msg="History: Selected archive local_core to download transactions-00000007.xdr.gz" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.369+08:00" level=info msg="Ledger: Ledger close complete: 2" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.369+08:00" level=info msg="History: Catching up to ledger 2: Download & apply checkpoints: num checkpoints left to apply:0 (100% done)" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.369+08:00" level=info msg="History: Catching up to ledger 2: Succeeded: catchup-seq" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.369+08:00" level=info msg="History: Catchup finished" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.369+08:00" level=info msg="default: *" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.369+08:00" level=info msg="default: * Catchup finished." pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.369+08:00" level=info msg="default: *" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: *" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: * Catchup info:" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"info\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"build\" : \"v25.0.1-dirty\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"ledger\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"age\" : 13," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"baseFee\" : 100," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"baseReserve\" : 100000000," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"bucketlist\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"curr\" : \"0000000000000000000000000000000000000000000000000000000000000000\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"snap\" : \"9ee8904645202f0e9e6b4cda6786da45d8d032b6f8761b0014f7681ee2010ac5\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"curr\" : \"0000000000000000000000000000000000000000000000000000000000000000\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"snap\" : \"0000000000000000000000000000000000000000000000000000000000000000\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"curr\" : \"0000000000000000000000000000000000000000000000000000000000000000\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"snap\" : \"0000000000000000000000000000000000000000000000000000000000000000\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"curr\" : \"0000000000000000000000000000000000000000000000000000000000000000\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"snap\" : \"0000000000000000000000000000000000000000000000000000000000000000\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"curr\" : \"0000000000000000000000000000000000000000000000000000000000000000\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"snap\" : \"0000000000000000000000000000000000000000000000000000000000000000\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"curr\" : \"0000000000000000000000000000000000000000000000000000000000000000\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"snap\" : \"0000000000000000000000000000000000000000000000000000000000000000\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"curr\" : \"0000000000000000000000000000000000000000000000000000000000000000\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"snap\" : \"0000000000000000000000000000000000000000000000000000000000000000\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"curr\" : \"0000000000000000000000000000000000000000000000000000000000000000\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"snap\" : \"0000000000000000000000000000000000000000000000000000000000000000\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"curr\" : \"0000000000000000000000000000000000000000000000000000000000000000\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"snap\" : \"0000000000000000000000000000000000000000000000000000000000000000\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"curr\" : \"0000000000000000000000000000000000000000000000000000000000000000\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"snap\" : \"0000000000000000000000000000000000000000000000000000000000000000\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="{" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"curr\" : \"0000000000000000000000000000000000000000000000000000000000000000\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"snap\" : \"0000000000000000000000000000000000000000000000000000000000000000\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"closeTime\" : 1768457004," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"hash\" : \"dc485c41e4b1dd28ce0bef90bc1d548995198558f34a1d56565bd7539200b801\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"maxTxSetSize\" : 100," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"num\" : 2," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"version\" : 0" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"network\" : \"Standalone Network ; February 2017\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"peers\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"authenticated_count\" : 0," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"pending_count\" : 0" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"protocol_version\" : 25," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"quorum\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"maybe_dead_nodes\" : []," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"node\" : \"GD3BX\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"qset\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"cost\" : 0," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"lag_ms\" : null" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"startedOn\" : \"2026-01-15T06:03:37Z\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"state\" : \"Joining SCP\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="\"status\" : [ \"Catching up to ledger 2: Succeeded: catchup-seq\" ]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: *" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Application destructing" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining worker thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining overlay thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joining eviction thread" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Joined all 12 threads" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.370+08:00" level=info msg="default: Application destroyed" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.387+08:00" level=info msg="Warning: running non-release version v25.0.1-dirty of stellar-core" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.387+08:00" level=info msg="default: Config from /Users/57block/stellar-toolkit/db/captive-core/captive-core/stellar-core.conf" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.388+08:00" level=info msg="default: 'ARTIFICIALLY_ACCELERATE_TIME_FOR_TESTING' enabled in configuration file - node will not function properly with most networks" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.388+08:00" level=info msg="default: Generated QUORUM_SET: {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.388+08:00" level=info msg="\"t\" : 1," pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.388+08:00" level=info msg="\"v\" : [ \"local_core\" ]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.388+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.388+08:00" level=warning msg="default: Artificial acceleration of time enabled (for testing only)" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.388+08:00" level=info msg="default: Starting stellar-core v25.0.1-dirty" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.389+08:00" level=info msg="Database: Connecting to: sqlite3:////Users/57block/stellar-toolkit/db/captive-core/stellar-rpc.db" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.390+08:00" level=info msg="Ledger: Streaming metadata to file descriptor 3" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.390+08:00" level=info msg="SCP: LocalNode::LocalNode@GD333 qSet: ab24c3" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.390+08:00" level=info msg="Database: DB schema is in current version" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.390+08:00" level=info msg="default: Listening on 127.0.0.1:11826 for HTTP requests" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.390+08:00" level=info msg="default: Listening on 127.0.0.1:11628 for Query requests" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="Bucket: BucketListDB enabled: pageSizeExponent: 12 indexCutOff: 20MB, persist indexes: true" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="default: Connection effective settings:" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="default: TARGET_PEER_CONNECTIONS: 8" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="default: MAX_ADDITIONAL_PEER_CONNECTIONS: 64" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="default: MAX_PENDING_CONNECTIONS: 500" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="default: MAX_OUTBOUND_PENDING_CONNECTIONS: 56" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="default: MAX_INBOUND_PENDING_CONNECTIONS: 444" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="default: BACKGROUND_OVERLAY_PROCESSING=true" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="default: EXPERIMENTAL_PARALLEL_LEDGER_APPLY=false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="History: Archive 'local_core' has 'get' command only, will not be written" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=warning msg="History: No writable archives configured, history will not be written." pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="Ledger: Starting up application" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="Ledger: Last closed ledger (LCL) hash is dc485c41e4b1dd28ce0bef90bc1d548995198558f34a1d56565bd7539200b801" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="Ledger: Loaded LCL header from database: [seq=2, hash=dc485c]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="Bucket: Restarted merge on BucketList level 1" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="Ledger: Assumed bucket-state for LCL: [seq=2, hash=dc485c]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="default: Launching 1 loading and 5 compiling background threads" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="default: Compiled 0 contracts (0 bytes of Wasm) in 0ms real time, 0ms CPU time" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.391+08:00" level=info msg="Overlay: Binding to endpoint 0.0.0.0:11825" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.392+08:00" level=info msg="History: Downloading history archive state: .well-known/stellar-history.json" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:37.396+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51577" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000001 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:37.396+08:00" level=info msg="starting JSONRPC request" json_req=1 method=getHealth pid=78868 req=2 subsys=jsonrpc
+time="2026-01-15T14:03:37.397+08:00" level=info msg="finished JSONRPC request" duration=1.506458ms json_req=2 pid=78868 req=2 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:37.397+08:00" level=info msg="finished request" bytes=114 duration=1.748458ms ip="127.0.0.1:51577" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000001 route=/ status=200 subsys=http
+time="2026-01-15T14:03:37.402+08:00" level=info msg="History: Archive information: [name: local_core, server: v25.0.1-dirty, currentLedger: 7]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:38.426+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51579" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000003 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:38.426+08:00" level=info msg="starting JSONRPC request" json_req=2 method=getHealth pid=78868 req=4 subsys=jsonrpc
+time="2026-01-15T14:03:38.426+08:00" level=info msg="finished JSONRPC request" duration="289.958µs" json_req=4 pid=78868 req=4 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:38.427+08:00" level=info msg="finished request" bytes=114 duration="545.375µs" ip="127.0.0.1:51579" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000003 route=/ status=200 subsys=http
+time="2026-01-15T14:03:39.399+08:00" level=info msg="Overlay: Authenticated to 127.0.0.1:11625" pid=78868 subservice=stellar-core
+time="2026-01-15T14:03:39.456+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51581" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000005 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:39.456+08:00" level=info msg="starting JSONRPC request" json_req=3 method=getHealth pid=78868 req=6 subsys=jsonrpc
+time="2026-01-15T14:03:39.457+08:00" level=info msg="finished JSONRPC request" duration="365.75µs" json_req=6 pid=78868 req=6 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:39.457+08:00" level=info msg="finished request" bytes=114 duration="634µs" ip="127.0.0.1:51581" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000005 route=/ status=200 subsys=http
+time="2026-01-15T14:03:40.490+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51582" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000007 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:40.491+08:00" level=info msg="starting JSONRPC request" json_req=4 method=getHealth pid=78868 req=8 subsys=jsonrpc
+time="2026-01-15T14:03:40.491+08:00" level=info msg="finished JSONRPC request" duration="384.625µs" json_req=8 pid=78868 req=8 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:40.491+08:00" level=info msg="finished request" bytes=114 duration="669µs" ip="127.0.0.1:51582" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000007 route=/ status=200 subsys=http
+time="2026-01-15T14:03:41.528+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51583" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000009 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:41.528+08:00" level=info msg="starting JSONRPC request" json_req=5 method=getHealth pid=78868 req=10 subsys=jsonrpc
+time="2026-01-15T14:03:41.528+08:00" level=info msg="finished JSONRPC request" duration="363.209µs" json_req=10 pid=78868 req=10 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:41.528+08:00" level=info msg="finished request" bytes=114 duration="632.75µs" ip="127.0.0.1:51583" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000009 route=/ status=200 subsys=http
+time="2026-01-15T14:03:42.557+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51585" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000011 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:42.557+08:00" level=info msg="starting JSONRPC request" json_req=6 method=getHealth pid=78868 req=12 subsys=jsonrpc
+time="2026-01-15T14:03:42.557+08:00" level=info msg="finished JSONRPC request" duration="338.666µs" json_req=12 pid=78868 req=12 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:42.557+08:00" level=info msg="finished request" bytes=114 duration="585.083µs" ip="127.0.0.1:51585" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000011 route=/ status=200 subsys=http
+time="2026-01-15T14:03:43.595+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51586" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000013 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:43.596+08:00" level=info msg="starting JSONRPC request" json_req=7 method=getHealth pid=78868 req=14 subsys=jsonrpc
+time="2026-01-15T14:03:43.596+08:00" level=info msg="finished JSONRPC request" duration="349.792µs" json_req=14 pid=78868 req=14 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:43.596+08:00" level=info msg="finished request" bytes=114 duration="647.417µs" ip="127.0.0.1:51586" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000013 route=/ status=200 subsys=http
+time="2026-01-15T14:03:44.628+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51587" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000015 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:44.628+08:00" level=info msg="starting JSONRPC request" json_req=8 method=getHealth pid=78868 req=16 subsys=jsonrpc
+time="2026-01-15T14:03:44.628+08:00" level=info msg="finished JSONRPC request" duration="284.708µs" json_req=16 pid=78868 req=16 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:44.628+08:00" level=info msg="finished request" bytes=114 duration="570.875µs" ip="127.0.0.1:51587" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000015 route=/ status=200 subsys=http
+time="2026-01-15T14:03:45.669+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51588" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000017 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:45.669+08:00" level=info msg="starting JSONRPC request" json_req=9 method=getHealth pid=78868 req=18 subsys=jsonrpc
+time="2026-01-15T14:03:45.670+08:00" level=info msg="finished JSONRPC request" duration="373.583µs" json_req=18 pid=78868 req=18 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:45.670+08:00" level=info msg="finished request" bytes=114 duration="673.833µs" ip="127.0.0.1:51588" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000017 route=/ status=200 subsys=http
+time="2026-01-15T14:03:46.703+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51589" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000019 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:46.703+08:00" level=info msg="starting JSONRPC request" json_req=10 method=getHealth pid=78868 req=20 subsys=jsonrpc
+time="2026-01-15T14:03:46.703+08:00" level=info msg="finished JSONRPC request" duration="344.042µs" json_req=20 pid=78868 req=20 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:46.703+08:00" level=info msg="finished request" bytes=114 duration="611.792µs" ip="127.0.0.1:51589" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000019 route=/ status=200 subsys=http
+time="2026-01-15T14:03:46.732+08:00" level=info msg="starting request" host="localhost:9000" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000021 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:46.732+08:00" level=info msg="starting JSONRPC request" json_req=11 method=getHealth pid=78868 req=22 subsys=jsonrpc
+time="2026-01-15T14:03:46.733+08:00" level=info msg="finished JSONRPC request" duration="228.083µs" json_req=22 pid=78868 req=22 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:46.733+08:00" level=info msg="finished request" bytes=114 duration="409.583µs" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000021 route=/ status=200 subsys=http
+time="2026-01-15T14:03:47.736+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51592" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000023 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:47.736+08:00" level=info msg="starting JSONRPC request" json_req=12 method=getHealth pid=78868 req=24 subsys=jsonrpc
+time="2026-01-15T14:03:47.737+08:00" level=info msg="finished JSONRPC request" duration="344.708µs" json_req=24 pid=78868 req=24 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:47.737+08:00" level=info msg="finished request" bytes=114 duration="674.333µs" ip="127.0.0.1:51592" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000023 route=/ status=200 subsys=http
+time="2026-01-15T14:03:48.770+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51593" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000025 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:48.770+08:00" level=info msg="starting JSONRPC request" json_req=13 method=getHealth pid=78868 req=26 subsys=jsonrpc
+time="2026-01-15T14:03:48.770+08:00" level=info msg="finished JSONRPC request" duration="351.667µs" json_req=26 pid=78868 req=26 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:48.771+08:00" level=info msg="finished request" bytes=114 duration="622.209µs" ip="127.0.0.1:51593" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000025 route=/ status=200 subsys=http
+time="2026-01-15T14:03:48.969+08:00" level=info msg="starting request" host="localhost:9000" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000027 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:48.969+08:00" level=info msg="starting JSONRPC request" json_req=14 method=getHealth pid=78868 req=28 subsys=jsonrpc
+time="2026-01-15T14:03:48.970+08:00" level=info msg="finished JSONRPC request" duration="219.25µs" json_req=28 pid=78868 req=28 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:48.970+08:00" level=info msg="finished request" bytes=114 duration="439.583µs" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000027 route=/ status=200 subsys=http
+time="2026-01-15T14:03:49.807+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51595" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000029 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:49.808+08:00" level=info msg="starting JSONRPC request" json_req=15 method=getHealth pid=78868 req=30 subsys=jsonrpc
+time="2026-01-15T14:03:49.808+08:00" level=info msg="finished JSONRPC request" duration="346.292µs" json_req=30 pid=78868 req=30 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:49.808+08:00" level=info msg="finished request" bytes=114 duration="605.75µs" ip="127.0.0.1:51595" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000029 route=/ status=200 subsys=http
+time="2026-01-15T14:03:50.807+08:00" level=info msg="starting request" host="localhost:9000" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000031 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:50.808+08:00" level=info msg="starting JSONRPC request" json_req=16 method=getHealth pid=78868 req=32 subsys=jsonrpc
+time="2026-01-15T14:03:50.808+08:00" level=info msg="finished JSONRPC request" duration="252µs" json_req=32 pid=78868 req=32 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:50.808+08:00" level=info msg="finished request" bytes=114 duration="499.208µs" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000031 route=/ status=200 subsys=http
+time="2026-01-15T14:03:50.827+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51597" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000033 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:50.828+08:00" level=info msg="starting JSONRPC request" json_req=17 method=getHealth pid=78868 req=34 subsys=jsonrpc
+time="2026-01-15T14:03:50.828+08:00" level=info msg="finished JSONRPC request" duration="165.833µs" json_req=34 pid=78868 req=34 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:50.828+08:00" level=info msg="finished request" bytes=114 duration="307.542µs" ip="127.0.0.1:51597" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000033 route=/ status=200 subsys=http
+time="2026-01-15T14:03:51.858+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51598" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000035 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:51.858+08:00" level=info msg="starting JSONRPC request" json_req=18 method=getHealth pid=78868 req=36 subsys=jsonrpc
+time="2026-01-15T14:03:51.859+08:00" level=info msg="finished JSONRPC request" duration="398.292µs" json_req=36 pid=78868 req=36 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:51.859+08:00" level=info msg="finished request" bytes=114 duration="734.958µs" ip="127.0.0.1:51598" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000035 route=/ status=200 subsys=http
+time="2026-01-15T14:03:52.870+08:00" level=info msg="starting request" host="localhost:9000" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000037 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:52.870+08:00" level=info msg="starting JSONRPC request" json_req=19 method=getHealth pid=78868 req=38 subsys=jsonrpc
+time="2026-01-15T14:03:52.870+08:00" level=info msg="finished JSONRPC request" duration="327.125µs" json_req=38 pid=78868 req=38 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:52.870+08:00" level=info msg="finished request" bytes=114 duration="658.625µs" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000037 route=/ status=200 subsys=http
+time="2026-01-15T14:03:52.882+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51600" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000039 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:52.882+08:00" level=info msg="starting JSONRPC request" json_req=20 method=getHealth pid=78868 req=40 subsys=jsonrpc
+time="2026-01-15T14:03:52.883+08:00" level=info msg="finished JSONRPC request" duration="153.958µs" json_req=40 pid=78868 req=40 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:52.883+08:00" level=info msg="finished request" bytes=114 duration="299.042µs" ip="127.0.0.1:51600" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000039 route=/ status=200 subsys=http
+time="2026-01-15T14:03:53.916+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51601" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000041 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:53.916+08:00" level=info msg="starting JSONRPC request" json_req=21 method=getHealth pid=78868 req=42 subsys=jsonrpc
+time="2026-01-15T14:03:53.916+08:00" level=info msg="finished JSONRPC request" duration="356.708µs" json_req=42 pid=78868 req=42 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:53.916+08:00" level=info msg="finished request" bytes=114 duration="625.667µs" ip="127.0.0.1:51601" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000041 route=/ status=200 subsys=http
+time="2026-01-15T14:03:54.861+08:00" level=info msg="starting request" host="localhost:9000" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000043 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:54.861+08:00" level=info msg="starting JSONRPC request" json_req=22 method=getHealth pid=78868 req=44 subsys=jsonrpc
+time="2026-01-15T14:03:54.862+08:00" level=info msg="finished JSONRPC request" duration="586.833µs" json_req=44 pid=78868 req=44 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:54.862+08:00" level=info msg="finished request" bytes=114 duration="955.459µs" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000043 route=/ status=200 subsys=http
+time="2026-01-15T14:03:54.946+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51603" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000045 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:54.946+08:00" level=info msg="starting JSONRPC request" json_req=23 method=getHealth pid=78868 req=46 subsys=jsonrpc
+time="2026-01-15T14:03:54.946+08:00" level=info msg="finished JSONRPC request" duration="294.708µs" json_req=46 pid=78868 req=46 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:54.946+08:00" level=info msg="finished request" bytes=114 duration="551.041µs" ip="127.0.0.1:51603" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000045 route=/ status=200 subsys=http
+time="2026-01-15T14:03:55.979+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51604" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000047 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:55.980+08:00" level=info msg="starting JSONRPC request" json_req=24 method=getHealth pid=78868 req=48 subsys=jsonrpc
+time="2026-01-15T14:03:55.980+08:00" level=info msg="finished JSONRPC request" duration="328.958µs" json_req=48 pid=78868 req=48 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:55.980+08:00" level=info msg="finished request" bytes=114 duration="591.208µs" ip="127.0.0.1:51604" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000047 route=/ status=200 subsys=http
+time="2026-01-15T14:03:56.602+08:00" level=info msg="starting request" host="localhost:9000" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000049 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:56.602+08:00" level=info msg="starting JSONRPC request" json_req=25 method=getHealth pid=78868 req=50 subsys=jsonrpc
+time="2026-01-15T14:03:56.603+08:00" level=info msg="finished JSONRPC request" duration="324.416µs" json_req=50 pid=78868 req=50 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:56.603+08:00" level=info msg="finished request" bytes=114 duration="659µs" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000049 route=/ status=200 subsys=http
+time="2026-01-15T14:03:57.007+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51607" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000051 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:57.007+08:00" level=info msg="starting JSONRPC request" json_req=26 method=getHealth pid=78868 req=52 subsys=jsonrpc
+time="2026-01-15T14:03:57.007+08:00" level=info msg="finished JSONRPC request" duration="210.834µs" json_req=52 pid=78868 req=52 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:57.008+08:00" level=info msg="finished request" bytes=114 duration="398.417µs" ip="127.0.0.1:51607" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000051 route=/ status=200 subsys=http
+time="2026-01-15T14:03:58.041+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51617" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000053 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:58.042+08:00" level=info msg="starting JSONRPC request" json_req=27 method=getHealth pid=78868 req=54 subsys=jsonrpc
+time="2026-01-15T14:03:58.042+08:00" level=info msg="finished JSONRPC request" duration="467.25µs" json_req=54 pid=78868 req=54 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:58.042+08:00" level=info msg="finished request" bytes=114 duration="891.5µs" ip="127.0.0.1:51617" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000053 route=/ status=200 subsys=http
+time="2026-01-15T14:03:58.128+08:00" level=info msg="starting request" host="localhost:9000" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000055 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:58.128+08:00" level=info msg="starting JSONRPC request" json_req=28 method=getHealth pid=78868 req=56 subsys=jsonrpc
+time="2026-01-15T14:03:58.128+08:00" level=info msg="finished JSONRPC request" duration="239.833µs" json_req=56 pid=78868 req=56 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:58.129+08:00" level=info msg="finished request" bytes=114 duration="467.291µs" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000055 route=/ status=200 subsys=http
+time="2026-01-15T14:03:59.083+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51627" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000057 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:59.083+08:00" level=info msg="starting JSONRPC request" json_req=29 method=getHealth pid=78868 req=58 subsys=jsonrpc
+time="2026-01-15T14:03:59.083+08:00" level=info msg="finished JSONRPC request" duration="338.708µs" json_req=58 pid=78868 req=58 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:59.083+08:00" level=info msg="finished request" bytes=114 duration="643.833µs" ip="127.0.0.1:51627" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000057 route=/ status=200 subsys=http
+time="2026-01-15T14:03:59.386+08:00" level=info msg="starting request" host="localhost:9000" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000059 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:03:59.386+08:00" level=info msg="starting JSONRPC request" json_req=30 method=getHealth pid=78868 req=60 subsys=jsonrpc
+time="2026-01-15T14:03:59.386+08:00" level=info msg="finished JSONRPC request" duration="316.959µs" json_req=60 pid=78868 req=60 status=ok subsys=jsonrpc
+time="2026-01-15T14:03:59.386+08:00" level=info msg="finished request" bytes=114 duration="545.75µs" ip="127.0.0.1:51591" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000059 route=/ status=200 subsys=http
+time="2026-01-15T14:04:00.116+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51630" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000061 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:00.116+08:00" level=info msg="starting JSONRPC request" json_req=31 method=getHealth pid=78868 req=62 subsys=jsonrpc
+time="2026-01-15T14:04:00.117+08:00" level=info msg="finished JSONRPC request" duration="363.625µs" json_req=62 pid=78868 req=62 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:00.117+08:00" level=info msg="finished request" bytes=114 duration="650.917µs" ip="127.0.0.1:51630" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000061 route=/ status=200 subsys=http
+time="2026-01-15T14:04:01.145+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51632" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000063 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:01.145+08:00" level=info msg="starting JSONRPC request" json_req=32 method=getHealth pid=78868 req=64 subsys=jsonrpc
+time="2026-01-15T14:04:01.146+08:00" level=info msg="finished JSONRPC request" duration="352.334µs" json_req=64 pid=78868 req=64 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:01.146+08:00" level=info msg="finished request" bytes=114 duration="633.792µs" ip="127.0.0.1:51632" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000063 route=/ status=200 subsys=http
+time="2026-01-15T14:04:02.179+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51633" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000065 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:02.179+08:00" level=info msg="starting JSONRPC request" json_req=33 method=getHealth pid=78868 req=66 subsys=jsonrpc
+time="2026-01-15T14:04:02.179+08:00" level=info msg="finished JSONRPC request" duration="288.25µs" json_req=66 pid=78868 req=66 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:02.180+08:00" level=info msg="finished request" bytes=114 duration="594.208µs" ip="127.0.0.1:51633" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000065 route=/ status=200 subsys=http
+time="2026-01-15T14:04:03.215+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51634" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000067 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:03.215+08:00" level=info msg="starting JSONRPC request" json_req=34 method=getHealth pid=78868 req=68 subsys=jsonrpc
+time="2026-01-15T14:04:03.216+08:00" level=info msg="finished JSONRPC request" duration="522.25µs" json_req=68 pid=78868 req=68 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:03.216+08:00" level=info msg="finished request" bytes=114 duration="870.125µs" ip="127.0.0.1:51634" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000067 route=/ status=200 subsys=http
+time="2026-01-15T14:04:04.251+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51635" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000069 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:04.251+08:00" level=info msg="starting JSONRPC request" json_req=35 method=getHealth pid=78868 req=70 subsys=jsonrpc
+time="2026-01-15T14:04:04.252+08:00" level=info msg="finished JSONRPC request" duration="412.541µs" json_req=70 pid=78868 req=70 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:04.252+08:00" level=info msg="finished request" bytes=114 duration="707.333µs" ip="127.0.0.1:51635" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000069 route=/ status=200 subsys=http
+time="2026-01-15T14:04:05.281+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51636" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000071 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:05.281+08:00" level=info msg="starting JSONRPC request" json_req=36 method=getHealth pid=78868 req=72 subsys=jsonrpc
+time="2026-01-15T14:04:05.281+08:00" level=info msg="finished JSONRPC request" duration="263.875µs" json_req=72 pid=78868 req=72 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:05.281+08:00" level=info msg="finished request" bytes=114 duration="500.834µs" ip="127.0.0.1:51636" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000071 route=/ status=200 subsys=http
+time="2026-01-15T14:04:06.299+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51638" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000073 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:06.299+08:00" level=info msg="starting JSONRPC request" json_req=37 method=getHealth pid=78868 req=74 subsys=jsonrpc
+time="2026-01-15T14:04:06.300+08:00" level=info msg="finished JSONRPC request" duration="162.25µs" json_req=74 pid=78868 req=74 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:06.300+08:00" level=info msg="finished request" bytes=114 duration="295.917µs" ip="127.0.0.1:51638" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000073 route=/ status=200 subsys=http
+time="2026-01-15T14:04:07.326+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51639" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000075 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:07.326+08:00" level=info msg="starting JSONRPC request" json_req=38 method=getHealth pid=78868 req=76 subsys=jsonrpc
+time="2026-01-15T14:04:07.326+08:00" level=info msg="finished JSONRPC request" duration="367.459µs" json_req=76 pid=78868 req=76 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:07.326+08:00" level=info msg="finished request" bytes=114 duration="610.875µs" ip="127.0.0.1:51639" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000075 route=/ status=200 subsys=http
+time="2026-01-15T14:04:08.355+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51640" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000077 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:08.356+08:00" level=info msg="starting JSONRPC request" json_req=39 method=getHealth pid=78868 req=78 subsys=jsonrpc
+time="2026-01-15T14:04:08.357+08:00" level=info msg="finished JSONRPC request" duration="303.958µs" json_req=78 pid=78868 req=78 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:08.357+08:00" level=info msg="finished request" bytes=114 duration="606.458µs" ip="127.0.0.1:51640" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000077 route=/ status=200 subsys=http
+time="2026-01-15T14:04:09.436+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51641" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000079 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:09.436+08:00" level=info msg="starting JSONRPC request" json_req=40 method=getHealth pid=78868 req=80 subsys=jsonrpc
+time="2026-01-15T14:04:09.436+08:00" level=info msg="finished JSONRPC request" duration="180.375µs" json_req=80 pid=78868 req=80 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:09.436+08:00" level=info msg="finished request" bytes=114 duration="326.25µs" ip="127.0.0.1:51641" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000079 route=/ status=200 subsys=http
+time="2026-01-15T14:04:10.461+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51642" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000081 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:10.461+08:00" level=info msg="starting JSONRPC request" json_req=41 method=getHealth pid=78868 req=82 subsys=jsonrpc
+time="2026-01-15T14:04:10.461+08:00" level=info msg="finished JSONRPC request" duration="154.791µs" json_req=82 pid=78868 req=82 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:10.461+08:00" level=info msg="finished request" bytes=114 duration="294.042µs" ip="127.0.0.1:51642" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000081 route=/ status=200 subsys=http
+time="2026-01-15T14:04:11.178+08:00" level=info msg="starting request" host="localhost:9000" ip="127.0.0.1:51644" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000083 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:11.178+08:00" level=info msg="starting JSONRPC request" json_req=42 method=getHealth pid=78868 req=84 subsys=jsonrpc
+time="2026-01-15T14:04:11.179+08:00" level=info msg="finished JSONRPC request" duration="272.416µs" json_req=84 pid=78868 req=84 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:11.179+08:00" level=info msg="finished request" bytes=114 duration="512.667µs" ip="127.0.0.1:51644" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000083 route=/ status=200 subsys=http
+time="2026-01-15T14:04:11.483+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51645" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000085 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:11.483+08:00" level=info msg="starting JSONRPC request" json_req=43 method=getHealth pid=78868 req=86 subsys=jsonrpc
+time="2026-01-15T14:04:11.483+08:00" level=info msg="finished JSONRPC request" duration="263.375µs" json_req=86 pid=78868 req=86 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:11.483+08:00" level=info msg="finished request" bytes=114 duration="495.709µs" ip="127.0.0.1:51645" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000085 route=/ status=200 subsys=http
+time="2026-01-15T14:04:12.393+08:00" level=warning msg="Herder: Lost track of consensus" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.394+08:00" level=warning msg="Herder: Out of sync context: {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.394+08:00" level=info msg="\"queue\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.394+08:00" level=info msg="\"30\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.394+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.394+08:00" level=info msg="\"{ENV@local_core |  i: 30 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 0a60f3, ct: 1768457032, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 0a60f3, ct: 1768457032, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 30 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 0a60f3, ct: 1768457032, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"31\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 31 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: a30c51, ct: 1768457033, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: a30c51, ct: 1768457033, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 31 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: a30c51, ct: 1768457033, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"32\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 32 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 65001f, ct: 1768457034, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 65001f, ct: 1768457034, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 32 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 65001f, ct: 1768457034, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"33\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 33 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 21f254, ct: 1768457035, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 21f254, ct: 1768457035, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 33 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 21f254, ct: 1768457035, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"34\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 34 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 6efd7a, ct: 1768457036, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 6efd7a, ct: 1768457036, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 34 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 6efd7a, ct: 1768457036, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"35\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 35 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: a22712, ct: 1768457037, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: a22712, ct: 1768457037, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 35 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: a22712, ct: 1768457037, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"36\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 36 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 465d81, ct: 1768457038, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 465d81, ct: 1768457038, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 36 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 465d81, ct: 1768457038, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"37\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 37 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 61b742, ct: 1768457039, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 61b742, ct: 1768457039, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 37 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 61b742, ct: 1768457039, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"38\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 38 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 0a1c82, ct: 1768457040, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 0a1c82, ct: 1768457040, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 38 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 0a1c82, ct: 1768457040, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"39\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 39 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: f836b0, ct: 1768457041, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: f836b0, ct: 1768457041, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 39 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: f836b0, ct: 1768457041, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"40\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 40 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: e1e661, ct: 1768457042, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: e1e661, ct: 1768457042, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="\"{ENV@local_core |  i: 40 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: e1e661, ct: 1768457042, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.395+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"41\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 41 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 1261fa, ct: 1768457043, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 1261fa, ct: 1768457043, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 41 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 1261fa, ct: 1768457043, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"42\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 42 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: b14237, ct: 1768457044, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: b14237, ct: 1768457044, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 42 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: b14237, ct: 1768457044, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"43\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 43 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: eb10c4, ct: 1768457045, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: eb10c4, ct: 1768457045, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 43 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: eb10c4, ct: 1768457045, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"44\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 44 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: adc36b, ct: 1768457046, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: adc36b, ct: 1768457046, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 44 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: adc36b, ct: 1768457046, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"45\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 45 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: e2b3dd, ct: 1768457047, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: e2b3dd, ct: 1768457047, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 45 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: e2b3dd, ct: 1768457047, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"46\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 46 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 4cb491, ct: 1768457048, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 4cb491, ct: 1768457048, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 46 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 4cb491, ct: 1768457048, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"47\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 47 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: b91d69, ct: 1768457049, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: b91d69, ct: 1768457049, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 47 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: b91d69, ct: 1768457049, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"48\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 48 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: d49d25, ct: 1768457051, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: d49d25, ct: 1768457051, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 48 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: d49d25, ct: 1768457051, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"49\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 49 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: ccac83, ct: 1768457052, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: ccac83, ct: 1768457052, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"{ENV@local_core |  i: 49 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: ccac83, ct: 1768457052, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"scp\" : null," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="\"you\" : \"GD333\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=info msg="Herder: Quorum information for 3 : {\"cost\":0,\"lag_ms\":null}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.396+08:00" level=warning msg="Herder: Ledger took 35.005256375 seconds, SCP information:{\"maybe_dead_nodes\":[],\"node\":\"GD333\",\"qset\":{\"agree\":[\"local_core\"],\"cost\":{\"5\":{\"local_core\":2412}},\"delayed\":null,\"disagree\":null,\"fail_at\":1,\"fail_with\":[\"local_core\"],\"hash\":\"ab24c3\",\"lag_ms\":null,\"ledger\":5,\"missing\":null,\"phase\":\"EXTERNALIZE\",\"value\":{\"t\":1,\"v\":[\"local_core\"]}}}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.402+08:00" level=info msg="Ledger: Got consensus: [seq=5, prev=fe1f59, txs=1, ops=1, sv: [ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.402+08:00" level=info msg="Ledger: Close of ledger 5 buffered. mSyncingLedgers has 1 ledgers" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.402+08:00" level=info msg="History: Waiting for trigger ledger: 5/9, ETA: 4s" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.402+08:00" level=info msg="Ledger: Lost sync, local LCL is 2, network closed ledger 5" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.402+08:00" level=info msg="Ledger: Changing state LM_BOOTING_STATE -> LM_CATCHING_UP_STATE" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.402+08:00" level=info msg="Herder: Transitive closure of quorum has changed, re-analyzing." pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.403+08:00" level=info msg="SCP: Calculating 2-node network quorum intersection" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.403+08:00" level=info msg="Herder: Quorum information for 4 : {\"cost\":0,\"lag_ms\":null}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.403+08:00" level=info msg="SCP: Examining 1 node groups for intersection-criticality" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.404+08:00" level=info msg="SCP: No intersection-critical groups found" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.405+08:00" level=info msg="Ledger: Got consensus: [seq=6, prev=14f919, txs=1, ops=1, sv: [ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.405+08:00" level=info msg="Ledger: Close of ledger 6 buffered. mSyncingLedgers has 2 ledgers" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.405+08:00" level=info msg="History: Waiting for trigger ledger: 6/9, ETA: 3s" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.406+08:00" level=info msg="Herder: Quorum information for 5 : {\"agree\":1,\"cost\":2412,\"delayed\":0,\"disagree\":0,\"fail_at\":1,\"hash\":\"ab24c3\",\"lag_ms\":null,\"ledger\":5,\"missing\":0,\"phase\":\"EXTERNALIZE\"}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.407+08:00" level=info msg="Ledger: Got consensus: [seq=7, prev=851dcc, txs=0, ops=0, sv: [ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.407+08:00" level=info msg="Ledger: Close of ledger 7 buffered. mSyncingLedgers has 3 ledgers" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.407+08:00" level=info msg="History: Waiting for trigger ledger: 7/9, ETA: 2s" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.407+08:00" level=info msg="Herder: Quorum information for 6 : {\"agree\":1,\"cost\":2052,\"delayed\":0,\"disagree\":0,\"fail_at\":1,\"hash\":\"ab24c3\",\"lag_ms\":null,\"ledger\":6,\"missing\":0,\"phase\":\"EXTERNALIZE\"}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.408+08:00" level=info msg="Ledger: Got consensus: [seq=8, prev=7bc576, txs=1, ops=1, sv: [ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.408+08:00" level=info msg="Ledger: Close of ledger 8 buffered. mSyncingLedgers has 4 ledgers" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.408+08:00" level=info msg="History: Waiting for trigger ledger: 8/9, ETA: 1s" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:12.509+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51647" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000087 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:12.509+08:00" level=info msg="starting JSONRPC request" json_req=44 method=getHealth pid=78868 req=88 subsys=jsonrpc
+time="2026-01-15T14:04:12.510+08:00" level=info msg="finished JSONRPC request" duration="236.458µs" json_req=88 pid=78868 req=88 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:12.510+08:00" level=info msg="finished request" bytes=114 duration="427.917µs" ip="127.0.0.1:51647" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000087 route=/ status=200 subsys=http
+time="2026-01-15T14:04:13.537+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51648" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000089 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:13.538+08:00" level=info msg="starting JSONRPC request" json_req=45 method=getHealth pid=78868 req=90 subsys=jsonrpc
+time="2026-01-15T14:04:13.538+08:00" level=info msg="finished JSONRPC request" duration="282.791µs" json_req=90 pid=78868 req=90 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:13.538+08:00" level=info msg="finished request" bytes=114 duration="541.583µs" ip="127.0.0.1:51648" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000089 route=/ status=200 subsys=http
+time="2026-01-15T14:04:14.561+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51649" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000091 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:14.562+08:00" level=info msg="starting JSONRPC request" json_req=46 method=getHealth pid=78868 req=92 subsys=jsonrpc
+time="2026-01-15T14:04:14.562+08:00" level=info msg="finished JSONRPC request" duration="223.125µs" json_req=92 pid=78868 req=92 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:14.562+08:00" level=info msg="finished request" bytes=114 duration="431.917µs" ip="127.0.0.1:51649" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000091 route=/ status=200 subsys=http
+time="2026-01-15T14:04:15.590+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51651" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000093 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:15.590+08:00" level=info msg="starting JSONRPC request" json_req=47 method=getHealth pid=78868 req=94 subsys=jsonrpc
+time="2026-01-15T14:04:15.590+08:00" level=info msg="finished JSONRPC request" duration="293.125µs" json_req=94 pid=78868 req=94 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:15.590+08:00" level=info msg="finished request" bytes=114 duration="545.916µs" ip="127.0.0.1:51651" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000093 route=/ status=200 subsys=http
+time="2026-01-15T14:04:16.620+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51653" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000095 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:16.621+08:00" level=info msg="starting JSONRPC request" json_req=48 method=getHealth pid=78868 req=96 subsys=jsonrpc
+time="2026-01-15T14:04:16.621+08:00" level=info msg="finished JSONRPC request" duration="254.958µs" json_req=96 pid=78868 req=96 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:16.621+08:00" level=info msg="finished request" bytes=114 duration="512.042µs" ip="127.0.0.1:51653" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000095 route=/ status=200 subsys=http
+time="2026-01-15T14:04:17.644+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51655" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000097 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:17.645+08:00" level=info msg="starting JSONRPC request" json_req=49 method=getHealth pid=78868 req=98 subsys=jsonrpc
+time="2026-01-15T14:04:17.645+08:00" level=info msg="finished JSONRPC request" duration="174.708µs" json_req=98 pid=78868 req=98 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:17.645+08:00" level=info msg="finished request" bytes=114 duration="348.167µs" ip="127.0.0.1:51655" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000097 route=/ status=200 subsys=http
+time="2026-01-15T14:04:18.676+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51656" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000099 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:18.677+08:00" level=info msg="starting JSONRPC request" json_req=50 method=getHealth pid=78868 req=100 subsys=jsonrpc
+time="2026-01-15T14:04:18.677+08:00" level=info msg="finished JSONRPC request" duration="375.625µs" json_req=100 pid=78868 req=100 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:18.677+08:00" level=info msg="finished request" bytes=114 duration="755.292µs" ip="127.0.0.1:51656" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000099 route=/ status=200 subsys=http
+time="2026-01-15T14:04:19.710+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51657" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000101 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:19.711+08:00" level=info msg="starting JSONRPC request" json_req=51 method=getHealth pid=78868 req=102 subsys=jsonrpc
+time="2026-01-15T14:04:19.711+08:00" level=info msg="finished JSONRPC request" duration="386.166µs" json_req=102 pid=78868 req=102 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:19.711+08:00" level=info msg="finished request" bytes=114 duration="676.292µs" ip="127.0.0.1:51657" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000101 route=/ status=200 subsys=http
+time="2026-01-15T14:04:20.748+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51658" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000103 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:20.749+08:00" level=info msg="starting JSONRPC request" json_req=52 method=getHealth pid=78868 req=104 subsys=jsonrpc
+time="2026-01-15T14:04:20.749+08:00" level=info msg="finished JSONRPC request" duration="417.166µs" json_req=104 pid=78868 req=104 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:20.749+08:00" level=info msg="finished request" bytes=114 duration="781.291µs" ip="127.0.0.1:51658" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000103 route=/ status=200 subsys=http
+time="2026-01-15T14:04:21.784+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51659" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000105 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:21.785+08:00" level=info msg="starting JSONRPC request" json_req=53 method=getHealth pid=78868 req=106 subsys=jsonrpc
+time="2026-01-15T14:04:21.785+08:00" level=info msg="finished JSONRPC request" duration="305.458µs" json_req=106 pid=78868 req=106 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:21.785+08:00" level=info msg="finished request" bytes=114 duration="576.875µs" ip="127.0.0.1:51659" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000105 route=/ status=200 subsys=http
+time="2026-01-15T14:04:22.815+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51660" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000107 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:22.816+08:00" level=info msg="starting JSONRPC request" json_req=54 method=getHealth pid=78868 req=108 subsys=jsonrpc
+time="2026-01-15T14:04:22.816+08:00" level=info msg="finished JSONRPC request" duration="346.25µs" json_req=108 pid=78868 req=108 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:22.816+08:00" level=info msg="finished request" bytes=114 duration="635.334µs" ip="127.0.0.1:51660" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000107 route=/ status=200 subsys=http
+time="2026-01-15T14:04:23.851+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51661" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000109 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:23.852+08:00" level=info msg="starting JSONRPC request" json_req=55 method=getHealth pid=78868 req=110 subsys=jsonrpc
+time="2026-01-15T14:04:23.852+08:00" level=info msg="finished JSONRPC request" duration="298.666µs" json_req=110 pid=78868 req=110 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:23.852+08:00" level=info msg="finished request" bytes=114 duration="564.5µs" ip="127.0.0.1:51661" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000109 route=/ status=200 subsys=http
+time="2026-01-15T14:04:24.888+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51662" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000111 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:24.889+08:00" level=info msg="starting JSONRPC request" json_req=56 method=getHealth pid=78868 req=112 subsys=jsonrpc
+time="2026-01-15T14:04:24.889+08:00" level=info msg="finished JSONRPC request" duration="552.958µs" json_req=112 pid=78868 req=112 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:24.889+08:00" level=info msg="finished request" bytes=114 duration="890.167µs" ip="127.0.0.1:51662" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000111 route=/ status=200 subsys=http
+time="2026-01-15T14:04:25.914+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51663" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000113 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:25.914+08:00" level=info msg="starting JSONRPC request" json_req=57 method=getHealth pid=78868 req=114 subsys=jsonrpc
+time="2026-01-15T14:04:25.915+08:00" level=info msg="finished JSONRPC request" duration="161.375µs" json_req=114 pid=78868 req=114 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:25.915+08:00" level=info msg="finished request" bytes=114 duration="311.667µs" ip="127.0.0.1:51663" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000113 route=/ status=200 subsys=http
+time="2026-01-15T14:04:26.950+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51664" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000115 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:26.950+08:00" level=info msg="starting JSONRPC request" json_req=58 method=getHealth pid=78868 req=116 subsys=jsonrpc
+time="2026-01-15T14:04:26.951+08:00" level=info msg="finished JSONRPC request" duration="430.292µs" json_req=116 pid=78868 req=116 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:26.951+08:00" level=info msg="finished request" bytes=114 duration="800.25µs" ip="127.0.0.1:51664" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000115 route=/ status=200 subsys=http
+time="2026-01-15T14:04:27.982+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51665" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000117 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:27.983+08:00" level=info msg="starting JSONRPC request" json_req=59 method=getHealth pid=78868 req=118 subsys=jsonrpc
+time="2026-01-15T14:04:27.983+08:00" level=info msg="finished JSONRPC request" duration="479.833µs" json_req=118 pid=78868 req=118 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:27.984+08:00" level=info msg="finished request" bytes=114 duration=1.381ms ip="127.0.0.1:51665" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000117 route=/ status=200 subsys=http
+time="2026-01-15T14:04:29.019+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51666" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000119 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:29.019+08:00" level=info msg="starting JSONRPC request" json_req=60 method=getHealth pid=78868 req=120 subsys=jsonrpc
+time="2026-01-15T14:04:29.020+08:00" level=info msg="finished JSONRPC request" duration="297.792µs" json_req=120 pid=78868 req=120 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:29.020+08:00" level=info msg="finished request" bytes=114 duration="564µs" ip="127.0.0.1:51666" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000119 route=/ status=200 subsys=http
+time="2026-01-15T14:04:30.055+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51667" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000121 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:30.056+08:00" level=info msg="starting JSONRPC request" json_req=61 method=getHealth pid=78868 req=122 subsys=jsonrpc
+time="2026-01-15T14:04:30.056+08:00" level=info msg="finished JSONRPC request" duration="363.375µs" json_req=122 pid=78868 req=122 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:30.056+08:00" level=info msg="finished request" bytes=114 duration="673µs" ip="127.0.0.1:51667" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000121 route=/ status=200 subsys=http
+time="2026-01-15T14:04:31.082+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51668" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000123 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:31.082+08:00" level=info msg="starting JSONRPC request" json_req=62 method=getHealth pid=78868 req=124 subsys=jsonrpc
+time="2026-01-15T14:04:31.083+08:00" level=info msg="finished JSONRPC request" duration="355.625µs" json_req=124 pid=78868 req=124 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:31.083+08:00" level=info msg="finished request" bytes=114 duration="653.209µs" ip="127.0.0.1:51668" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000123 route=/ status=200 subsys=http
+time="2026-01-15T14:04:32.108+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51669" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000125 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:32.108+08:00" level=info msg="starting JSONRPC request" json_req=63 method=getHealth pid=78868 req=126 subsys=jsonrpc
+time="2026-01-15T14:04:32.108+08:00" level=info msg="finished JSONRPC request" duration="152.625µs" json_req=126 pid=78868 req=126 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:32.108+08:00" level=info msg="finished request" bytes=114 duration="290.5µs" ip="127.0.0.1:51669" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000125 route=/ status=200 subsys=http
+time="2026-01-15T14:04:33.140+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51670" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000127 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:33.141+08:00" level=info msg="starting JSONRPC request" json_req=64 method=getHealth pid=78868 req=128 subsys=jsonrpc
+time="2026-01-15T14:04:33.141+08:00" level=info msg="finished JSONRPC request" duration="361.667µs" json_req=128 pid=78868 req=128 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:33.141+08:00" level=info msg="finished request" bytes=114 duration="649.959µs" ip="127.0.0.1:51670" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000127 route=/ status=200 subsys=http
+time="2026-01-15T14:04:34.176+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51671" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000129 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:34.176+08:00" level=info msg="starting JSONRPC request" json_req=65 method=getHealth pid=78868 req=130 subsys=jsonrpc
+time="2026-01-15T14:04:34.176+08:00" level=info msg="finished JSONRPC request" duration="359.958µs" json_req=130 pid=78868 req=130 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:34.177+08:00" level=info msg="finished request" bytes=114 duration="650.208µs" ip="127.0.0.1:51671" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000129 route=/ status=200 subsys=http
+time="2026-01-15T14:04:35.205+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51672" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000131 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:35.205+08:00" level=info msg="starting JSONRPC request" json_req=66 method=getHealth pid=78868 req=132 subsys=jsonrpc
+time="2026-01-15T14:04:35.206+08:00" level=info msg="finished JSONRPC request" duration="218.041µs" json_req=132 pid=78868 req=132 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:35.206+08:00" level=info msg="finished request" bytes=114 duration="406.833µs" ip="127.0.0.1:51672" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000131 route=/ status=200 subsys=http
+time="2026-01-15T14:04:36.240+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51673" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000133 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:36.240+08:00" level=info msg="starting JSONRPC request" json_req=67 method=getHealth pid=78868 req=134 subsys=jsonrpc
+time="2026-01-15T14:04:36.240+08:00" level=info msg="finished JSONRPC request" duration="354.834µs" json_req=134 pid=78868 req=134 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:36.240+08:00" level=info msg="finished request" bytes=114 duration="657.75µs" ip="127.0.0.1:51673" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000133 route=/ status=200 subsys=http
+time="2026-01-15T14:04:37.271+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51674" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000135 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:37.271+08:00" level=info msg="starting JSONRPC request" json_req=68 method=getHealth pid=78868 req=136 subsys=jsonrpc
+time="2026-01-15T14:04:37.272+08:00" level=info msg="finished JSONRPC request" duration="278.542µs" json_req=136 pid=78868 req=136 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:37.272+08:00" level=info msg="finished request" bytes=114 duration="636.5µs" ip="127.0.0.1:51674" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000135 route=/ status=200 subsys=http
+time="2026-01-15T14:04:38.258+08:00" level=info msg="starting request" host="localhost:9000" ip="127.0.0.1:51676" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000137 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:38.258+08:00" level=info msg="starting JSONRPC request" json_req=69 method=getHealth pid=78868 req=138 subsys=jsonrpc
+time="2026-01-15T14:04:38.258+08:00" level=info msg="finished JSONRPC request" duration="248.042µs" json_req=138 pid=78868 req=138 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:38.258+08:00" level=info msg="finished request" bytes=114 duration="493µs" ip="127.0.0.1:51676" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000137 route=/ status=200 subsys=http
+time="2026-01-15T14:04:38.295+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51677" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000139 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:38.295+08:00" level=info msg="starting JSONRPC request" json_req=70 method=getHealth pid=78868 req=140 subsys=jsonrpc
+time="2026-01-15T14:04:38.295+08:00" level=info msg="finished JSONRPC request" duration="186.292µs" json_req=140 pid=78868 req=140 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:38.295+08:00" level=info msg="finished request" bytes=114 duration="350.625µs" ip="127.0.0.1:51677" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000139 route=/ status=200 subsys=http
+time="2026-01-15T14:04:39.327+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51678" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000141 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:39.327+08:00" level=info msg="starting JSONRPC request" json_req=71 method=getHealth pid=78868 req=142 subsys=jsonrpc
+time="2026-01-15T14:04:39.327+08:00" level=info msg="finished JSONRPC request" duration="354.542µs" json_req=142 pid=78868 req=142 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:39.328+08:00" level=info msg="finished request" bytes=114 duration="643.75µs" ip="127.0.0.1:51678" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000141 route=/ status=200 subsys=http
+time="2026-01-15T14:04:40.361+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51679" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000143 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:40.361+08:00" level=info msg="starting JSONRPC request" json_req=72 method=getHealth pid=78868 req=144 subsys=jsonrpc
+time="2026-01-15T14:04:40.361+08:00" level=info msg="finished JSONRPC request" duration="256µs" json_req=144 pid=78868 req=144 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:40.361+08:00" level=info msg="finished request" bytes=114 duration="478.041µs" ip="127.0.0.1:51679" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000143 route=/ status=200 subsys=http
+time="2026-01-15T14:04:41.399+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51681" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000145 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:41.399+08:00" level=info msg="starting JSONRPC request" json_req=73 method=getHealth pid=78868 req=146 subsys=jsonrpc
+time="2026-01-15T14:04:41.399+08:00" level=info msg="finished JSONRPC request" duration="289.125µs" json_req=146 pid=78868 req=146 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:41.400+08:00" level=info msg="finished request" bytes=114 duration="574.958µs" ip="127.0.0.1:51681" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000145 route=/ status=200 subsys=http
+time="2026-01-15T14:04:42.428+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51682" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000147 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:42.428+08:00" level=info msg="starting JSONRPC request" json_req=74 method=getHealth pid=78868 req=148 subsys=jsonrpc
+time="2026-01-15T14:04:42.429+08:00" level=info msg="finished JSONRPC request" duration="184.75µs" json_req=148 pid=78868 req=148 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:42.429+08:00" level=info msg="finished request" bytes=114 duration="335.417µs" ip="127.0.0.1:51682" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000147 route=/ status=200 subsys=http
+time="2026-01-15T14:04:43.463+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51683" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000149 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:43.463+08:00" level=info msg="starting JSONRPC request" json_req=75 method=getHealth pid=78868 req=150 subsys=jsonrpc
+time="2026-01-15T14:04:43.464+08:00" level=info msg="finished JSONRPC request" duration="249.209µs" json_req=150 pid=78868 req=150 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:43.464+08:00" level=info msg="finished request" bytes=114 duration="454.792µs" ip="127.0.0.1:51683" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000149 route=/ status=200 subsys=http
+time="2026-01-15T14:04:44.487+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51684" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000151 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:44.487+08:00" level=info msg="starting JSONRPC request" json_req=76 method=getHealth pid=78868 req=152 subsys=jsonrpc
+time="2026-01-15T14:04:44.488+08:00" level=info msg="finished JSONRPC request" duration="167.833µs" json_req=152 pid=78868 req=152 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:44.488+08:00" level=info msg="finished request" bytes=114 duration="298.416µs" ip="127.0.0.1:51684" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000151 route=/ status=200 subsys=http
+time="2026-01-15T14:04:45.522+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51685" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000153 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:45.522+08:00" level=info msg="starting JSONRPC request" json_req=77 method=getHealth pid=78868 req=154 subsys=jsonrpc
+time="2026-01-15T14:04:45.523+08:00" level=info msg="finished JSONRPC request" duration="252.584µs" json_req=154 pid=78868 req=154 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:45.523+08:00" level=info msg="finished request" bytes=114 duration="469.791µs" ip="127.0.0.1:51685" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000153 route=/ status=200 subsys=http
+time="2026-01-15T14:04:46.548+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51686" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000155 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:46.548+08:00" level=info msg="starting JSONRPC request" json_req=78 method=getHealth pid=78868 req=156 subsys=jsonrpc
+time="2026-01-15T14:04:46.548+08:00" level=info msg="finished JSONRPC request" duration="214.042µs" json_req=156 pid=78868 req=156 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:46.548+08:00" level=info msg="finished request" bytes=114 duration="441.458µs" ip="127.0.0.1:51686" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000155 route=/ status=200 subsys=http
+time="2026-01-15T14:04:47.409+08:00" level=warning msg="Herder: Lost track of consensus" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.410+08:00" level=warning msg="Herder: Out of sync context: {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"queue\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"65\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 65 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: d4d5ce, ct: 1768457068, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: d4d5ce, ct: 1768457068, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 65 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: d4d5ce, ct: 1768457068, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"66\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 66 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 6c3f54, ct: 1768457069, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 6c3f54, ct: 1768457069, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 66 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 6c3f54, ct: 1768457069, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"67\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 67 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: d9900c, ct: 1768457070, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: d9900c, ct: 1768457070, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 67 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: d9900c, ct: 1768457070, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"68\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 68 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 4570a8, ct: 1768457071, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 4570a8, ct: 1768457071, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 68 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 4570a8, ct: 1768457071, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"69\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 69 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 6ec879, ct: 1768457072, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 6ec879, ct: 1768457072, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 69 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 6ec879, ct: 1768457072, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"70\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 70 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: d4628e, ct: 1768457073, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: d4628e, ct: 1768457073, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 70 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: d4628e, ct: 1768457073, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"71\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 71 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 2d2996, ct: 1768457074, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 2d2996, ct: 1768457074, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 71 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 2d2996, ct: 1768457074, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"72\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 72 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: b32e81, ct: 1768457075, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: b32e81, ct: 1768457075, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"{ENV@local_core |  i: 72 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: b32e81, ct: 1768457075, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.411+08:00" level=info msg="\"73\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 73 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 5dd98b, ct: 1768457076, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 5dd98b, ct: 1768457076, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 73 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 5dd98b, ct: 1768457076, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"74\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 74 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 93710e, ct: 1768457077, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 93710e, ct: 1768457077, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 74 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 93710e, ct: 1768457077, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"75\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 75 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: cb6945, ct: 1768457078, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: cb6945, ct: 1768457078, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 75 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: cb6945, ct: 1768457078, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"76\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 76 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 18634e, ct: 1768457079, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 18634e, ct: 1768457079, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 76 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 18634e, ct: 1768457079, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"77\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 77 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 1dc55b, ct: 1768457080, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 1dc55b, ct: 1768457080, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 77 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 1dc55b, ct: 1768457080, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"78\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 78 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 206c6f, ct: 1768457081, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 206c6f, ct: 1768457081, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 78 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 206c6f, ct: 1768457081, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"79\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 79 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 361ea4, ct: 1768457082, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 361ea4, ct: 1768457082, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 79 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 361ea4, ct: 1768457082, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"80\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 80 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 0186b0, ct: 1768457083, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 0186b0, ct: 1768457083, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 80 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 0186b0, ct: 1768457083, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"81\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 81 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 072781, ct: 1768457084, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 072781, ct: 1768457084, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 81 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 072781, ct: 1768457084, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"82\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 82 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: f5c2a6, ct: 1768457085, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: f5c2a6, ct: 1768457085, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 82 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: f5c2a6, ct: 1768457085, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"83\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 83 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 33b8ee, ct: 1768457086, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 33b8ee, ct: 1768457086, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"{ENV@local_core |  i: 83 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 33b8ee, ct: 1768457086, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.412+08:00" level=info msg="\"84\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"pending\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"{ENV@local_core |  i: 84 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 6433d5, ct: 1768457087, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 6433d5, ct: 1768457087, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"{ENV@local_core |  i: 84 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 6433d5, ct: 1768457087, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"scp\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"5\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"ballotProtocol\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"ballot\" : \"(4294967295,[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ])\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"heard\" : true," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"phase\" : \"EXTERNALIZE\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"state\" : \"i: 5 | EXTERNALIZE | b: (4294967295,[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]) | p: (4294967295,[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]) | p': (<null_ballot>) | h: (4294967295,[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]) | c: (1,[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]) | M: 2\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"nomination\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"roundnumber\" : 0," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"started\" : false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"quorum_sets\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"ab24c3\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"t\" : 1," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"v\" : [ \"local_core\" ]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"statements\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"{ENV@local_core |  i: 5 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"{ENV@local_core |  i: 5 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"{ENV@GD333 |  i: 5 | PREPARE | D: ab24c3 | b: (0,[:empty:]) | p: (4294967295,[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]) | p': (<null_ballot>) | c.n: 0 | h.n: 0 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"{ENV@GD333 |  i: 5 | PREPARE | D: ab24c3 | b: (4294967295,[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]) | p: (4294967295,[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]) | p': (<null_ballot>) | c.n: 4294967295 | h.n: 4294967295 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"{ENV@GD333 |  i: 5 | CONFIRM | D: ab24c3 | b: (4294967295,[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]) | p.n: 4294967295 | c.n: 1 | h.n: 4294967295 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"{ENV@GD333 |  i: 5 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: b2bf1b, ct: 1768457007, upgrades: [ ] ]) | h.n: 4294967295 | (lastD): ab24c3 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"validated\" : false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"6\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"ballotProtocol\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"ballot\" : \"(4294967295,[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ])\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"heard\" : true," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"phase\" : \"EXTERNALIZE\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.413+08:00" level=info msg="\"state\" : \"i: 6 | EXTERNALIZE | b: (4294967295,[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]) | p: (4294967295,[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]) | p': (<null_ballot>) | h: (4294967295,[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]) | c: (1,[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]) | M: 2\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"nomination\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"roundnumber\" : 0," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"started\" : false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"quorum_sets\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"ab24c3\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"t\" : 1," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"v\" : [ \"local_core\" ]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"statements\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"{ENV@local_core |  i: 6 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"{ENV@local_core |  i: 6 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"{ENV@GD333 |  i: 6 | PREPARE | D: ab24c3 | b: (0,[:empty:]) | p: (4294967295,[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]) | p': (<null_ballot>) | c.n: 0 | h.n: 0 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"{ENV@GD333 |  i: 6 | PREPARE | D: ab24c3 | b: (4294967295,[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]) | p: (4294967295,[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]) | p': (<null_ballot>) | c.n: 4294967295 | h.n: 4294967295 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"{ENV@GD333 |  i: 6 | CONFIRM | D: ab24c3 | b: (4294967295,[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]) | p.n: 4294967295 | c.n: 1 | h.n: 4294967295 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"{ENV@GD333 |  i: 6 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: ddea64, ct: 1768457008, upgrades: [ ] ]) | h.n: 4294967295 | (lastD): ab24c3 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"validated\" : false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"7\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"ballotProtocol\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"ballot\" : \"(4294967295,[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ])\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"heard\" : true," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"phase\" : \"EXTERNALIZE\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"state\" : \"i: 7 | EXTERNALIZE | b: (4294967295,[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]) | p: (4294967295,[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]) | p': (<null_ballot>) | h: (4294967295,[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]) | c: (1,[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]) | M: 2\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"nomination\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"roundnumber\" : 0," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"started\" : false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"quorum_sets\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"ab24c3\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"t\" : 1," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"v\" : [ \"local_core\" ]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"statements\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"{ENV@local_core |  i: 7 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"{ENV@local_core |  i: 7 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"{ENV@GD333 |  i: 7 | PREPARE | D: ab24c3 | b: (0,[:empty:]) | p: (4294967295,[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]) | p': (<null_ballot>) | c.n: 0 | h.n: 0 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="\"{ENV@GD333 |  i: 7 | PREPARE | D: ab24c3 | b: (4294967295,[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]) | p: (4294967295,[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]) | p': (<null_ballot>) | c.n: 4294967295 | h.n: 4294967295 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.414+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"{ENV@GD333 |  i: 7 | CONFIRM | D: ab24c3 | b: (4294967295,[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]) | p.n: 4294967295 | c.n: 1 | h.n: 4294967295 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"{ENV@GD333 |  i: 7 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: a9d288, ct: 1768457009, upgrades: [ ] ]) | h.n: 4294967295 | (lastD): ab24c3 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"validated\" : false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"8\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"ballotProtocol\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"ballot\" : \"(4294967295,[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ])\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"heard\" : true," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"phase\" : \"EXTERNALIZE\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"state\" : \"i: 8 | EXTERNALIZE | b: (4294967295,[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]) | p: (4294967295,[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]) | p': (<null_ballot>) | h: (4294967295,[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]) | c: (1,[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]) | M: 2\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"nomination\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"roundnumber\" : 0," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"started\" : false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"quorum_sets\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"ab24c3\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"t\" : 1," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"v\" : [ \"local_core\" ]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"statements\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"{ENV@local_core |  i: 8 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]'} | Y: {'[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"{ENV@local_core |  i: 8 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]) | h.n: 1 | (lastD): ab24c3 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"{ENV@GD333 |  i: 8 | PREPARE | D: ab24c3 | b: (0,[:empty:]) | p: (4294967295,[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]) | p': (<null_ballot>) | c.n: 0 | h.n: 0 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"{ENV@GD333 |  i: 8 | PREPARE | D: ab24c3 | b: (4294967295,[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]) | p: (4294967295,[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]) | p': (<null_ballot>) | c.n: 4294967295 | h.n: 4294967295 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"{ENV@GD333 |  i: 8 | CONFIRM | D: ab24c3 | b: (4294967295,[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]) | p.n: 4294967295 | c.n: 1 | h.n: 4294967295 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"{ENV@GD333 |  i: 8 | EXTERNALIZE | c: (1,[ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]) | h.n: 4294967295 | (lastD): ab24c3 }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"validated\" : false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"9\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"ballotProtocol\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"ballot\" : \"(<null_ballot>)\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"heard\" : false," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"phase\" : \"PREPARE\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"state\" : \"i: 9 | PREPARE | b: (<null_ballot>) | p: (<null_ballot>) | p': (<null_ballot>) | h: (<null_ballot>) | c: (<null_ballot>) | M: 0\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"nomination\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"roundnumber\" : 0," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"started\" : false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"quorum_sets\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"ab24c3\" : {" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"t\" : 1," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"v\" : [ \"local_core\" ]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"statements\" : [" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="[" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="1768457052," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="\"{ENV@local_core |  i: 9 | NOMINATE | D: ab24c3 | X: {'[ SIGNED@local_core txH: a88aa3, ct: 1768457011, upgrades: [{\\n    \\\"configupgradesetkey\\\": {\\n        \\\"contractID\\\": \\\"CA4NGQEYDDA7EGHL2OBBC43NQNZAMD4DIKKLSTWU33EEEVHBTAJUD6WY\\\",\\n        \\\"contentHash\\\": \\\"7e430578845561c8d027cb8ed0186ea86303f3ba08bb0de81cbf46219fae001c\\\"\\n    }\\n},  ] ]'} | Y: {'[ SIGNED@local_core txH: a88aa3, ct: 1768457011, upgrades: [{\\n    \\\"configupgradesetkey\\\": {\\n        \\\"contractID\\\": \\\"CA4NGQEYDDA7EGHL2OBBC43NQNZAMD4DIKKLSTWU33EEEVHBTAJUD6WY\\\",\\n        \\\"contentHash\\\": \\\"7e430578845561c8d027cb8ed0186ea86303f3ba08bb0de81cbf46219fae001c\\\"\\n    }\\n},  ] ]'} }\"," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg=false pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.415+08:00" level=info msg="]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="]," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="\"validated\" : false" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="}," pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="\"you\" : \"GD333\"" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="Herder: Quorum information for 8 : {\"agree\":1,\"cost\":2068,\"delayed\":0,\"disagree\":0,\"fail_at\":1,\"hash\":\"ab24c3\",\"lag_ms\":2,\"ledger\":8,\"missing\":0,\"phase\":\"EXTERNALIZE\"}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=warning msg="Herder: Ledger took 35.003157792 seconds, SCP information:{\"maybe_dead_nodes\":[],\"node\":\"GD333\",\"qset\":{\"agree\":[\"local_core\"],\"cost\":{\"10\":{\"local_core\":2412}},\"delayed\":null,\"disagree\":null,\"fail_at\":1,\"fail_with\":[\"local_core\"],\"hash\":\"ab24c3\",\"lag_ms\":{\"local_core\":2},\"ledger\":10,\"missing\":null,\"phase\":\"EXTERNALIZE\",\"value\":{\"t\":1,\"v\":[\"local_core\"]}},\"transitive\":{\"critical\":null,\"intersection\":true,\"last_check_ledger\":5,\"node_count\":2}}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="Ledger: Got consensus: [seq=10, prev=8c7dcd, txs=1, ops=1, sv: [ SIGNED@local_core txH: caa2bd, ct: 1768457012, upgrades: [ ] ]]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="Ledger: Close of ledger 10 buffered. mSyncingLedgers has 5 ledgers" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="History: Starting catchup after ensuring checkpoint ledger 10 was closed on network" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="Herder: Quorum information for 9 : {\"agree\":1,\"cost\":1692,\"delayed\":0,\"disagree\":0,\"fail_at\":0,\"hash\":\"ab24c3\",\"lag_ms\":2,\"ledger\":9,\"missing\":0,\"phase\":\"unknown\"}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="Ledger: Got consensus: [seq=11, prev=0b5327, txs=1, ops=1, sv: [ SIGNED@local_core txH: 96b498, ct: 1768457013, upgrades: [ ] ]]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="Ledger: Close of ledger 11 buffered. mSyncingLedgers has 3 ledgers" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="History: Catching up to ledger 7: Running: catchup" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="History: Starting catchup with configuration:" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="lastClosedLedger: 2" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="toLedger: 7" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="count: 0" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="History: Catching up to ledger 7: Downloading state file history/00/00/00/history-00000007.json for ledger 7" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="History: Downloading history archive state: history/00/00/00/history-00000007.json" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.416+08:00" level=info msg="History: Selected archive local_core to download history-00000007.json" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.419+08:00" level=info msg="Herder: Quorum information for 10 : {\"agree\":1,\"cost\":2412,\"delayed\":0,\"disagree\":0,\"fail_at\":1,\"hash\":\"ab24c3\",\"lag_ms\":2,\"ledger\":10,\"missing\":0,\"phase\":\"EXTERNALIZE\"}" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.420+08:00" level=info msg="Ledger: Got consensus: [seq=12, prev=0d99c5, txs=1, ops=1, sv: [ SIGNED@local_core txH: 08ef1c, ct: 1768457014, upgrades: [ ] ]]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.420+08:00" level=info msg="Ledger: Close of ledger 12 buffered. mSyncingLedgers has 4 ledgers" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.436+08:00" level=info msg="History: Catching up to ledger 7: downloading ledger files 1/1 (100%)" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.436+08:00" level=info msg="History: Selected archive local_core to download ledger-00000007.xdr.gz" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.450+08:00" level=info msg="History: Catching up to ledger 7: Succeeded: batch-download-ledger-00000007-0000000f : 1/1 children completed" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.450+08:00" level=info msg="History: Verifying ledgers [3,8)" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.451+08:00" level=info msg="History: Verifying ledger [seq=7, hash=7bc576] against SCP hash" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.451+08:00" level=info msg="History: History chain [3,7] verified" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.451+08:00" level=info msg="History: Catching up to ledger 7: Succeeded: verify-ledger-chain" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.451+08:00" level=info msg="History: Catching up to ledger 7: Ready to run: herder-state-consistency-work" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.451+08:00" level=info msg="History: Catching up to ledger 7: Succeeded: herder-state-consistency-work" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.451+08:00" level=info msg="History: Downloading, unzipping and applying transactions for checkpoint 7" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.451+08:00" level=info msg="History: Catching up to ledger 7: Download & apply checkpoints: num checkpoints left to apply:1 (0% done)" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.451+08:00" level=info msg="History: Selected archive local_core to download transactions-00000007.xdr.gz" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.462+08:00" level=info msg="Ledger: Starting prepareLiabilities" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.462+08:00" level=info msg="Ledger: prepareLiabilities completed with 0 accounts modified, 0 trustlines modified, 0 offers adjusted, 0 offers adjusted to zero, and 0 offers erased" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.464+08:00" level=info msg="Ledger: Ledger close complete: 3" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.464+08:00" level=info msg="Tx: applying ledger 4 (classic phase: 0 component(s): [], soroban phase: 1 component(s): [{discounted txs:1, ops:1, base_fee:100}])" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.466+08:00" level=info msg="Ledger: Ledger close complete: 4" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.466+08:00" level=info msg="Tx: applying ledger 5 (classic phase: 0 component(s): [], soroban phase: 1 component(s): [{discounted txs:1, ops:1, base_fee:100}])" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.468+08:00" level=info msg="Ledger: Ledger close complete: 5" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.468+08:00" level=info msg="Tx: applying ledger 6 (classic phase: 0 component(s): [], soroban phase: 1 component(s): [{discounted txs:1, ops:1, base_fee:100}])" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.469+08:00" level=info msg="Ledger: Ledger close complete: 6" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.470+08:00" level=info msg="Ingesting ledger 7" pid=78868
+time="2026-01-15T14:04:47.470+08:00" level=info msg="Ledger: Ledger close complete: 7" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.470+08:00" level=info msg="History: Catching up to ledger 7: Download & apply checkpoints: num checkpoints left to apply:0 (100% done)" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.470+08:00" level=info msg="History: Catching up to ledger 7: Applying buffered ledgers: Running: apply-buffered-ledgers" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.470+08:00" level=info msg="History: Scheduling buffered ledger-close: [seq=8, prev=7bc576, txs=1, ops=1, sv: [ SIGNED@local_core txH: 25646d, ct: 1768457010, upgrades: [ ] ]]" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.470+08:00" level=info msg="History: Catching up to ledger 7: Applying buffered ledgers: Waiting before starting apply ledger 8" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.470+08:00" level=info msg="Tx: applying ledger 8 (classic phase: 0 component(s): [], soroban phase: 1 component(s): [{discounted txs:1, ops:1, base_fee:100}])" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.471+08:00" level=info msg="Ingesting ledger 8" pid=78868
+time="2026-01-15T14:04:47.472+08:00" level=info msg="Ledger: Ledger close complete: 8" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.472+08:00" level=info msg="History: No more buffered ledgers to apply" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.472+08:00" level=info msg="History: Catching up to ledger 7: Applying buffered ledgers: apply ledger 8" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.472+08:00" level=info msg="History: Catchup finished" pid=78868 subservice=stellar-core
+time="2026-01-15T14:04:47.472+08:00" level=info msg="Ingesting ledger 9" pid=78868
+time="2026-01-15T14:04:47.569+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51690" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000157 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:47.569+08:00" level=info msg="starting JSONRPC request" json_req=79 method=getHealth pid=78868 req=158 subsys=jsonrpc
+time="2026-01-15T14:04:47.570+08:00" level=info msg="finished JSONRPC request" duration="251.5µs" json_req=158 pid=78868 req=158 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:47.570+08:00" level=info msg="finished request" bytes=140 duration="416.666µs" ip="127.0.0.1:51690" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000157 route=/ status=200 subsys=http
+time="2026-01-15T14:04:48.600+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51691" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000159 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:48.601+08:00" level=info msg="starting JSONRPC request" json_req=80 method=getHealth pid=78868 req=160 subsys=jsonrpc
+time="2026-01-15T14:04:48.601+08:00" level=info msg="finished JSONRPC request" duration="337.792µs" json_req=160 pid=78868 req=160 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:48.601+08:00" level=info msg="finished request" bytes=140 duration="651.583µs" ip="127.0.0.1:51691" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000159 route=/ status=200 subsys=http
+time="2026-01-15T14:04:49.635+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51692" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000161 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:49.636+08:00" level=info msg="starting JSONRPC request" json_req=81 method=getHealth pid=78868 req=162 subsys=jsonrpc
+time="2026-01-15T14:04:49.636+08:00" level=info msg="finished JSONRPC request" duration="323.334µs" json_req=162 pid=78868 req=162 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:49.636+08:00" level=info msg="finished request" bytes=140 duration="625.459µs" ip="127.0.0.1:51692" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000161 route=/ status=200 subsys=http
+time="2026-01-15T14:04:50.662+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51693" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000163 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:50.662+08:00" level=info msg="starting JSONRPC request" json_req=82 method=getHealth pid=78868 req=164 subsys=jsonrpc
+time="2026-01-15T14:04:50.662+08:00" level=info msg="finished JSONRPC request" duration="223.75µs" json_req=164 pid=78868 req=164 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:50.662+08:00" level=info msg="finished request" bytes=140 duration="476.625µs" ip="127.0.0.1:51693" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000163 route=/ status=200 subsys=http
+time="2026-01-15T14:04:51.687+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51694" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000165 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:51.687+08:00" level=info msg="starting JSONRPC request" json_req=83 method=getHealth pid=78868 req=166 subsys=jsonrpc
+time="2026-01-15T14:04:51.688+08:00" level=info msg="finished JSONRPC request" duration="473.916µs" json_req=166 pid=78868 req=166 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:51.688+08:00" level=info msg="finished request" bytes=140 duration="934.125µs" ip="127.0.0.1:51694" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000165 route=/ status=200 subsys=http
+time="2026-01-15T14:04:52.715+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51695" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000167 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:52.715+08:00" level=info msg="starting JSONRPC request" json_req=84 method=getHealth pid=78868 req=168 subsys=jsonrpc
+time="2026-01-15T14:04:52.716+08:00" level=info msg="finished JSONRPC request" duration="188.334µs" json_req=168 pid=78868 req=168 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:52.716+08:00" level=info msg="finished request" bytes=140 duration="367.125µs" ip="127.0.0.1:51695" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000167 route=/ status=200 subsys=http
+time="2026-01-15T14:04:53.744+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51696" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000169 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:53.744+08:00" level=info msg="starting JSONRPC request" json_req=85 method=getHealth pid=78868 req=170 subsys=jsonrpc
+time="2026-01-15T14:04:53.745+08:00" level=info msg="finished JSONRPC request" duration="267.208µs" json_req=170 pid=78868 req=170 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:53.745+08:00" level=info msg="finished request" bytes=140 duration="520.625µs" ip="127.0.0.1:51696" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000169 route=/ status=200 subsys=http
+time="2026-01-15T14:04:54.775+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51697" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000171 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:54.775+08:00" level=info msg="starting JSONRPC request" json_req=86 method=getHealth pid=78868 req=172 subsys=jsonrpc
+time="2026-01-15T14:04:54.775+08:00" level=info msg="finished JSONRPC request" duration="276.417µs" json_req=172 pid=78868 req=172 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:54.776+08:00" level=info msg="finished request" bytes=140 duration="536µs" ip="127.0.0.1:51697" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000171 route=/ status=200 subsys=http
+time="2026-01-15T14:04:55.808+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51698" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000173 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:55.808+08:00" level=info msg="starting JSONRPC request" json_req=87 method=getHealth pid=78868 req=174 subsys=jsonrpc
+time="2026-01-15T14:04:55.808+08:00" level=info msg="finished JSONRPC request" duration="284.75µs" json_req=174 pid=78868 req=174 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:55.808+08:00" level=info msg="finished request" bytes=140 duration="535.459µs" ip="127.0.0.1:51698" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000173 route=/ status=200 subsys=http
+time="2026-01-15T14:04:56.840+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51699" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000175 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:56.840+08:00" level=info msg="starting JSONRPC request" json_req=88 method=getHealth pid=78868 req=176 subsys=jsonrpc
+time="2026-01-15T14:04:56.840+08:00" level=info msg="finished JSONRPC request" duration="317.375µs" json_req=176 pid=78868 req=176 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:56.841+08:00" level=info msg="finished request" bytes=140 duration="576.917µs" ip="127.0.0.1:51699" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000175 route=/ status=200 subsys=http
+time="2026-01-15T14:04:57.866+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51706" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000177 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:57.866+08:00" level=info msg="starting JSONRPC request" json_req=89 method=getHealth pid=78868 req=178 subsys=jsonrpc
+time="2026-01-15T14:04:57.866+08:00" level=info msg="finished JSONRPC request" duration="224.666µs" json_req=178 pid=78868 req=178 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:57.866+08:00" level=info msg="finished request" bytes=140 duration="444.667µs" ip="127.0.0.1:51706" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000177 route=/ status=200 subsys=http
+time="2026-01-15T14:04:58.892+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51715" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000179 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:58.892+08:00" level=info msg="starting JSONRPC request" json_req=90 method=getHealth pid=78868 req=180 subsys=jsonrpc
+time="2026-01-15T14:04:58.893+08:00" level=info msg="finished JSONRPC request" duration="173.208µs" json_req=180 pid=78868 req=180 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:58.893+08:00" level=info msg="finished request" bytes=140 duration="345.25µs" ip="127.0.0.1:51715" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000179 route=/ status=200 subsys=http
+time="2026-01-15T14:04:59.926+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51719" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000181 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:04:59.926+08:00" level=info msg="starting JSONRPC request" json_req=91 method=getHealth pid=78868 req=182 subsys=jsonrpc
+time="2026-01-15T14:04:59.927+08:00" level=info msg="finished JSONRPC request" duration="352.583µs" json_req=182 pid=78868 req=182 status=ok subsys=jsonrpc
+time="2026-01-15T14:04:59.927+08:00" level=info msg="finished request" bytes=140 duration="727.416µs" ip="127.0.0.1:51719" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000181 route=/ status=200 subsys=http
+time="2026-01-15T14:05:00.963+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51721" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000183 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:05:00.964+08:00" level=info msg="starting JSONRPC request" json_req=92 method=getHealth pid=78868 req=184 subsys=jsonrpc
+time="2026-01-15T14:05:00.964+08:00" level=info msg="finished JSONRPC request" duration="342.584µs" json_req=184 pid=78868 req=184 status=ok subsys=jsonrpc
+time="2026-01-15T14:05:00.964+08:00" level=info msg="finished request" bytes=140 duration="654.458µs" ip="127.0.0.1:51721" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000183 route=/ status=200 subsys=http
+time="2026-01-15T14:05:01.998+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51722" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000185 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:05:01.998+08:00" level=info msg="starting JSONRPC request" json_req=93 method=getHealth pid=78868 req=186 subsys=jsonrpc
+time="2026-01-15T14:05:01.999+08:00" level=info msg="finished JSONRPC request" duration="336.125µs" json_req=186 pid=78868 req=186 status=ok subsys=jsonrpc
+time="2026-01-15T14:05:01.999+08:00" level=info msg="finished request" bytes=140 duration="628.334µs" ip="127.0.0.1:51722" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000185 route=/ status=200 subsys=http
+time="2026-01-15T14:05:03.042+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51723" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000187 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:05:03.043+08:00" level=info msg="starting JSONRPC request" json_req=94 method=getHealth pid=78868 req=188 subsys=jsonrpc
+time="2026-01-15T14:05:03.043+08:00" level=info msg="finished JSONRPC request" duration="340.25µs" json_req=188 pid=78868 req=188 status=ok subsys=jsonrpc
+time="2026-01-15T14:05:03.043+08:00" level=info msg="finished request" bytes=140 duration="647.125µs" ip="127.0.0.1:51723" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000187 route=/ status=200 subsys=http
+time="2026-01-15T14:05:04.076+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51724" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000189 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:05:04.076+08:00" level=info msg="starting JSONRPC request" json_req=95 method=getHealth pid=78868 req=190 subsys=jsonrpc
+time="2026-01-15T14:05:04.076+08:00" level=info msg="finished JSONRPC request" duration="305.125µs" json_req=190 pid=78868 req=190 status=ok subsys=jsonrpc
+time="2026-01-15T14:05:04.077+08:00" level=info msg="finished request" bytes=140 duration="576.834µs" ip="127.0.0.1:51724" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000189 route=/ status=200 subsys=http
+time="2026-01-15T14:05:05.108+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51725" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000191 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:05:05.108+08:00" level=info msg="starting JSONRPC request" json_req=96 method=getHealth pid=78868 req=192 subsys=jsonrpc
+time="2026-01-15T14:05:05.108+08:00" level=info msg="finished JSONRPC request" duration="259.083µs" json_req=192 pid=78868 req=192 status=ok subsys=jsonrpc
+time="2026-01-15T14:05:05.109+08:00" level=info msg="finished request" bytes=140 duration="508.917µs" ip="127.0.0.1:51725" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000191 route=/ status=200 subsys=http
+time="2026-01-15T14:05:06.138+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51726" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000193 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:05:06.138+08:00" level=info msg="starting JSONRPC request" json_req=97 method=getHealth pid=78868 req=194 subsys=jsonrpc
+time="2026-01-15T14:05:06.138+08:00" level=info msg="finished JSONRPC request" duration="307.166µs" json_req=194 pid=78868 req=194 status=ok subsys=jsonrpc
+time="2026-01-15T14:05:06.138+08:00" level=info msg="finished request" bytes=140 duration="604.958µs" ip="127.0.0.1:51726" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000193 route=/ status=200 subsys=http
+time="2026-01-15T14:05:07.155+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51728" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000195 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:05:07.155+08:00" level=info msg="starting JSONRPC request" json_req=98 method=getHealth pid=78868 req=196 subsys=jsonrpc
+time="2026-01-15T14:05:07.155+08:00" level=info msg="finished JSONRPC request" duration="187.084µs" json_req=196 pid=78868 req=196 status=ok subsys=jsonrpc
+time="2026-01-15T14:05:07.155+08:00" level=info msg="finished request" bytes=140 duration="363.541µs" ip="127.0.0.1:51728" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000195 route=/ status=200 subsys=http
+time="2026-01-15T14:05:08.188+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51729" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000197 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:05:08.188+08:00" level=info msg="starting JSONRPC request" json_req=99 method=getHealth pid=78868 req=198 subsys=jsonrpc
+time="2026-01-15T14:05:08.189+08:00" level=info msg="finished JSONRPC request" duration="322.375µs" json_req=198 pid=78868 req=198 status=ok subsys=jsonrpc
+time="2026-01-15T14:05:08.189+08:00" level=info msg="finished request" bytes=140 duration="667.5µs" ip="127.0.0.1:51729" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000197 route=/ status=200 subsys=http
+time="2026-01-15T14:05:09.222+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51730" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000199 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:05:09.222+08:00" level=info msg="starting JSONRPC request" json_req=100 method=getHealth pid=78868 req=200 subsys=jsonrpc
+time="2026-01-15T14:05:09.223+08:00" level=info msg="finished JSONRPC request" duration="306.625µs" json_req=200 pid=78868 req=200 status=ok subsys=jsonrpc
+time="2026-01-15T14:05:09.223+08:00" level=info msg="finished request" bytes=140 duration="589.75µs" ip="127.0.0.1:51730" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000199 route=/ status=200 subsys=http
+time="2026-01-15T14:05:10.257+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51732" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000201 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:05:10.257+08:00" level=info msg="starting JSONRPC request" json_req=101 method=getHealth pid=78868 req=202 subsys=jsonrpc
+time="2026-01-15T14:05:10.258+08:00" level=info msg="finished JSONRPC request" duration="280.917µs" json_req=202 pid=78868 req=202 status=ok subsys=jsonrpc
+time="2026-01-15T14:05:10.258+08:00" level=info msg="finished request" bytes=140 duration="563.25µs" ip="127.0.0.1:51732" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000201 route=/ status=200 subsys=http
+time="2026-01-15T14:05:11.291+08:00" level=info msg="starting request" host="127.0.0.1:9003" ip="127.0.0.1:51733" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000203 subsys=http useragent=curl/8.7.1
+time="2026-01-15T14:05:11.291+08:00" level=info msg="starting JSONRPC request" json_req=102 method=getHealth pid=78868 req=204 subsys=jsonrpc
+time="2026-01-15T14:05:11.292+08:00" level=info msg="finished JSONRPC request" duration="335.291µs" json_req=204 pid=78868 req=204 status=ok subsys=jsonrpc
+time="2026-01-15T14:05:11.292+08:00" level=info msg="finished request" bytes=140 duration="591.834µs" ip="127.0.0.1:51733" method=POST path=/ pid=78868 req=57-PC-NB-0131.local/46T1vWDkBB-000203 route=/ status=200 subsys=http
