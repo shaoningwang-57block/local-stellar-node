@@ -2,6 +2,7 @@
 db/
 log/
 tmp/
+dist/
 *.log
 *.db
 *.sqlite
