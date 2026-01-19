@@ -1,5 +1,7 @@
 can start a stellar node without docker(just support macOS Apple cpu now)
 
+you need install steallar CLI first
+
 run to install stallar node tool
 ```shell
 curl -fsSL https://raw.githubusercontent.com/shaoningwang-57block/local-stellar-node/main/install/install.sh | bash
