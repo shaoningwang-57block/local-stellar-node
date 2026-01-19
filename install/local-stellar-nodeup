@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# ✅ 一定要是你的 repo
-REPO="${REPO:-shaoningwang-57block/local-stellar-node}"
-
-# 可选：指定版本，比如 v0.1.0；不指定则装 latest
-VERSION="${VERSION:-latest}"
-
+REPO="${REPO:-shaoningwang-57block/local-stellar-node}"   # 你的 github repo
 INSTALL_DIR="${INSTALL_DIR:-$HOME/.local-stellar-node}"
 BIN_DIR="${BIN_DIR:-$HOME/.local/bin}"
 BIN_NAME="stellar-tool"
@@ -49,19 +44,11 @@ ensure_path() {
   fi
 }
 
-release_url() {
+fetch_latest_release_url() {
   local platform="$1"
-
-  # 产物名：local-stellar-node_<os>_<arch>.tar.gz
-  # 例：local-stellar-node_darwin_aarch64.tar.gz
-  local asset="local-stellar-node_${platform}.tar.gz"
-
-  if [[ "$VERSION" == "latest" ]]; then
-    echo "https://github.com/${REPO}/releases/latest/download/${asset}"
-  else
-    # 指定 tag，比如 VERSION=v0.1.0
-    echo "https://github.com/${REPO}/releases/download/${VERSION}/${asset}"
-  fi
+  # 你的 release 产物命名：
+  # local-stellar-node_darwin_aarch64.tar.gz
+  echo "https://github.com/$REPO/releases/latest/download/local-stellar-node_${platform}.tar.gz"
 }
 
 install_release() {
@@ -80,12 +67,23 @@ install_release() {
 
   # 下载并解压
   curl -L "$url" -o "$tmp/pkg.tar.gz"
+
+  # 简单校验一下是不是 gzip（避免下载到 HTML 404 页）
+  if ! file "$tmp/pkg.tar.gz" | grep -qi "gzip"; then
+    echo "---- downloaded file type ----"
+    file "$tmp/pkg.tar.gz" || true
+    echo "---- first 20 bytes ----"
+    head -c 200 "$tmp/pkg.tar.gz" || true
+    die "downloaded file is not a valid .tar.gz (maybe release asset not found?)"
+  fi
+
   tar -xzf "$tmp/pkg.tar.gz" -C "$INSTALL_DIR"
 
-  # 清理临时目录（关键）
+  # 清理临时目录（不要用 EXIT trap + local 变量）
   rm -rf "$tmp"
 
   # 创建软链到 ~/.local/bin
+  mkdir -p "$BIN_DIR"
   ln -sf "$INSTALL_DIR/bin/$BIN_NAME" "$BIN_DIR/$BIN_NAME"
   chmod +x "$INSTALL_DIR/bin/$BIN_NAME"
 
