@@ -3,6 +3,12 @@ db/
 log/
 tmp/
 dist/
+bin/stellar-core/
+bin/stellar-rpc/
+bin/friendbot/
+bin/caddy/
+install/
+
 *.log
 *.db
 *.sqlite
