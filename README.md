@@ -3,6 +3,11 @@
 A lightweight CLI to manage a local Stellar/Soroban node toolkit (non-Docker).  
 It provides one-command start/stop/reset, health checks, log viewing, and a `test` wrapper for running Rust tests (with optional coverage).
 
+run to install stallar node tool
+```shell
+curl -fsSL https://raw.githubusercontent.com/shaoningwang-57block/local-stellar-node/main/install/install.sh | bash
+```
+
 ## Repo Layout
 
 This CLI expects the following structure:
