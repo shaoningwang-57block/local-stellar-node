@@ -1,6 +1,3 @@
-Here’s a short English README.md you can paste into your GitHub repo ✅
-
-```
 # stellar-tool (local-stellar-node)
 
 A lightweight CLI to manage a local Stellar/Soroban node toolkit (non-Docker).  
@@ -26,7 +23,6 @@ log/stellar-rpc.log    (optional)
 
 log/caddy.log          (optional)
 
-```
 
 ## Install
 
