@@ -22,10 +22,15 @@ set -euo pipefail
 #   stellar-tool health
 #   stellar-tool wait
 #   stellar-tool logs rpc
+#   stellar-tool test
 #
 # Env:
 #   LOCAL_STELLAR_NODE_HOME   # toolkit root path override
 #   STELLAR_RPC_URL           # default http://127.0.0.1:9003
+#
+#   (test-related)
+#   STELLAR_TOOL_SHOW_USAGE   # "1"/"0" control printing resource usage table in tests
+#   STELLAR_TOOL_TEST_DIR     # default cargo test dir override (optional)
 
 PROG="stellar-tool"
 
@@ -128,22 +133,18 @@ wait_cmd() {
   while true; do
     if out="$(jsonrpc_get_health "$RPC_URL" 2>/dev/null)"; then
       # "healthy" usually returns {"status":"healthy"} or status ok without error
-      # Your case: it may return error when DB empty / latency too high.
       if echo "$out" | grep -q '"status"[[:space:]]*:[[:space:]]*"healthy"'; then
         log "RPC is healthy ✅"
         echo "$out"
         return 0
       fi
 
-      # Some deployments return status=ok without "healthy"
+      # Some deployments return result without "healthy"
       if echo "$out" | grep -q '"result"'; then
         log "RPC returned result (considered ready) ✅"
         echo "$out"
         return 0
       fi
-
-      # Not ready yet
-      # log "Not ready: $out"
     fi
 
     local now_ts
@@ -151,7 +152,6 @@ wait_cmd() {
     local elapsed=$((now_ts - start_ts))
     if (( elapsed >= timeout )); then
       log "Timeout waiting for RPC healthy ❌"
-      # last response for debugging
       jsonrpc_get_health "$RPC_URL" || true
       return 2
     fi
@@ -210,6 +210,152 @@ reset_cmd() {
   bash "$SCRIPT_RESET"
 }
 
+# -------------------------
+# test command
+# -------------------------
+test_cmd() {
+  ensure_layout
+
+  local wait_first="0"
+  local test_dir=""                 # auto choose
+  local coverage_mode="0"           # 0=cargo test, 1=cargo llvm-cov
+  local coverage_html="0"           # 1=llvm-cov --html
+  local show_usage=""               # ""=no override, 1=show, 0=hide
+  local -a cargo_args=()
+
+  # Parse args
+  # Supported:
+  #   --path <dir>     set cargo working dir
+  #   --wait           wait for node healthy before test
+  #   --cov|--coverage use cargo llvm-cov (requires cargo-llvm-cov)
+  #   --cov-html       cargo llvm-cov --html
+  #   --usage          export STELLAR_TOOL_SHOW_USAGE=1
+  #   --no-usage       export STELLAR_TOOL_SHOW_USAGE=0
+  #   --               passthrough the rest to cargo
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --path)
+        shift || die "--path requires a directory"
+        test_dir="$1"
+        shift
+        ;;
+      --wait)
+        wait_first="1"
+        shift
+        ;;
+      --cov|--coverage)
+        coverage_mode="1"
+        shift
+        ;;
+      --cov-html)
+        coverage_mode="1"
+        coverage_html="1"
+        shift
+        ;;
+      --usage)
+        show_usage="1"
+        shift
+        ;;
+      --no-usage)
+        show_usage="0"
+        shift
+        ;;
+      --)
+        shift
+        cargo_args+=("$@")
+        break
+        ;;
+      *)
+        cargo_args+=("$1")
+        shift
+        ;;
+    esac
+  done
+
+  command -v cargo >/dev/null 2>&1 || die "missing required command: cargo"
+
+  # Auto choose test dir:
+  # 1) If usage enabled, auto add --nocapture so output won't be swallowed by Rust test harness
+  # 2) --path
+  # 3) $STELLAR_TOOL_TEST_DIR
+  # 4) current dir has Cargo.toml
+  # 5) toolkit ROOT has Cargo.toml
+  if [[ "$show_usage" == "1" ]]; then
+    local has_nocapture="0"
+    local has_sep="0"
+
+    for a in "${cargo_args[@]}"; do
+      [[ "$a" == "--nocapture" ]] && has_nocapture="1"
+      [[ "$a" == "--" ]] && has_sep="1"
+    done
+
+    if [[ "$has_nocapture" == "0" ]]; then
+      if [[ "$has_sep" == "1" ]]; then
+        # already has `--`, just append runner arg
+        cargo_args+=("--nocapture")
+      else
+        # no `--` yet, add separator + runner arg
+        cargo_args+=("--" "--nocapture")
+      fi
+    fi
+  fi
+  
+  if [[ -z "$test_dir" ]]; then
+    if [[ -n "${STELLAR_TOOL_TEST_DIR:-}" ]]; then
+      test_dir="$STELLAR_TOOL_TEST_DIR"
+    elif [[ -f "./Cargo.toml" ]]; then
+      test_dir="."
+    elif [[ -f "$ROOT/Cargo.toml" ]]; then
+      test_dir="$ROOT"
+    else
+      die "Cargo.toml not found in current dir or toolkit root. Use: $PROG test --path <dir>"
+    fi
+  fi
+
+  test_dir="$(realpath_portable "$test_dir")"
+  [[ -f "$test_dir/Cargo.toml" ]] || die "Cargo.toml not found in: $test_dir (use --path <dir>)"
+
+  # If needed, wait for node
+  if [[ "$wait_first" == "1" ]]; then
+    log "Waiting for local node before running tests..."
+    wait_cmd 60 1 || die "node not ready"
+  fi
+
+  # Decide cargo subcommand
+  local -a subcmd=("test")
+  if [[ "$coverage_mode" == "1" ]]; then
+    subcmd=("llvm-cov")
+    if [[ "$coverage_html" == "1" ]]; then
+      subcmd+=("--html")
+    fi
+  fi
+
+  local cargo_args_str=""
+  if (( ${#cargo_args[@]} > 0 )); then
+    cargo_args_str="${cargo_args[*]}"
+  fi
+  log "Running: cargo ${subcmd[*]} ${cargo_args_str} (dir=$test_dir)"
+
+  (
+    cd "$test_dir"
+
+    # Inject node RPC url (tests can read STELLAR_RPC_URL)
+    export STELLAR_RPC_URL="$RPC_URL"
+
+    # Toggle resource usage table printing (your Rust side reads it)
+    if [[ -n "$show_usage" ]]; then
+      export STELLAR_TOOL_SHOW_USAGE="$show_usage"
+    fi
+
+    # macOS Bash 3.2 + set -u: empty array expansion may throw "unbound variable"
+    if (( ${#cargo_args[@]} > 0 )); then
+      cargo "${subcmd[@]}" "${cargo_args[@]}"
+    else
+      cargo "${subcmd[@]}"
+    fi
+  )
+}
+
 help_cmd() {
   cat <<EOF
 $PROG - local-stellar-node CLI
@@ -222,10 +368,18 @@ Usage:
   $PROG health
   $PROG wait [timeout_seconds=60] [interval_seconds=1]
   $PROG logs {rpc|core|caddy} [lines=200]
+  $PROG test [--path <dir>] [--wait] [--cov|--cov-html] [--usage|--no-usage] [-- <cargo args...>]
 
 Env:
   LOCAL_STELLAR_NODE_HOME   toolkit root override
   STELLAR_RPC_URL           default RPC url (default: $DEFAULT_RPC_URL)
+
+  STELLAR_TOOL_TEST_DIR     default test directory override (optional)
+  STELLAR_TOOL_SHOW_USAGE   "1"/"0" control printing resource usage table in tests (optional)
+
+Notes:
+  - Coverage uses: cargo llvm-cov (requires cargo-llvm-cov installed)
+    Install: cargo install cargo-llvm-cov
 
 Examples:
   $PROG start
@@ -233,6 +387,22 @@ Examples:
   $PROG status
   $PROG logs rpc 300
   STELLAR_RPC_URL=http://127.0.0.1:9003 $PROG health
+
+  # Run tests in current dir (if Cargo.toml exists)
+  $PROG test
+  $PROG test -- --nocapture
+
+  # Run tests in a specific workspace
+  $PROG test --path ~/projects/SolvBTC-Stellar-Contract -- --nocapture
+
+  # Wait node + show resource usage + nocapture
+  $PROG test --wait --usage -- --nocapture
+
+  # Coverage (console)
+  $PROG test --cov
+
+  # Coverage (HTML report)
+  $PROG test --cov-html
 EOF
 }
 
@@ -248,6 +418,7 @@ case "$cmd" in
   health) health_cmd "$@" ;;
   wait)   wait_cmd "$@" ;;
   logs)   logs_cmd "$@" ;;
+  test)   test_cmd "$@" ;;
   help|-h|--help) help_cmd ;;
   *)
     log "Unknown command: $cmd"
